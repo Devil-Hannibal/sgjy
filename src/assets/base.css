@@ -1,19 +1,62 @@
-*{
-    margin: 0;
-    padding: 0;
+* {
+	margin: 0;
+	padding: 0;
 }
-li{
-    list-style: none;
+
+@font-face {
+	font-family: '微软雅黑';
+	vertical-align: text-bottom;
+}
+
+li {
+	list-style: none;
 
 }
-a{
-    text-decoration: none;
+
+a {
+	text-decoration: none;
 }
-.font16{
-    font-size:16px;
+
+.clearfix:after {
+	content: " ";
+	display: block;
+	clear: both;
+	height: 0;
+
 }
-.font15{
+
+.clearfix {
+	zoom: 1;
+}
+
+.fl {
+	float: left;
+}
+
+.fr {
+	float: right;
+}
+
+.text-left {
+	text-align: left;
+}
+
+.text-right {
+	text-align: right;
+}
+
+.text-center {
+	text-align: center;
+}
+
+.font16 {
+	font-size: 16px;
+}
+
+.font15 {
 	font-size: 15px;
-	}
-	.font18{
-		font-size: 18px;}
+}
+
+.font18 {
+	font-size: 18px;
+}

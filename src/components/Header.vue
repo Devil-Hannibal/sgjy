@@ -23,7 +23,7 @@
               <!-- logo区域 -->
               <el-col :span="4">
                 <div class="logo_l">
-                  <img src="./../assets/images/logo.png" alt>
+                  <img src="./../../static/images/logo.png" alt>
                 </div>
               </el-col>
               <!-- 搜索框 -->
@@ -59,7 +59,7 @@
               <el-col :span="6">
                 <div class="logo_r">
                   <div class="tel">
-                    <img src="./../assets/images/phone.png" alt>
+                    <img src="./../../static/images/phone.png" alt>
                   </div>
                   <div class="tel_r">
                     <p>全国服务热线</p>

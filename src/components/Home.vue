@@ -1,6 +1,6 @@
 <template>
 	<div class="home">
-		<Header></Header>
+		<my-header></my-header>
 		<!-- 内容区域 -->
 		<div class="container">
 			<!-- 轮播图与菜单区域 -->
@@ -341,7 +341,7 @@
 					</div>
 				</div>
 				<!-- 资格考试 -->
-								<div class="yypx clearfix zgks">
+				<div class="yypx clearfix zgks">
 					<div class="px_details fl">
 						<div class="title clearfix">
 							<div class="fl">
@@ -468,7 +468,7 @@
 									<i class="iconfont icon-jiantou"></i>
 									<span>2019幼儿教师综合资格证书</span>
 								</li>
-				
+
 								<li>
 									<i class="iconfont icon-jiantou"></i>
 									<span>2019幼儿教师综合资格证书</span>
@@ -482,7 +482,7 @@
 					</div>
 				</div>
 				<!-- 学习辅导 -->
-								<div class="yypx clearfix xxfd">
+				<div class="yypx clearfix xxfd">
 					<div class="px_details fl">
 						<div class="title clearfix">
 							<div class="fl">
@@ -609,7 +609,7 @@
 									<i class="iconfont icon-jiantou"></i>
 									<span>2019幼儿教师综合资格证书</span>
 								</li>
-				
+
 								<li>
 									<i class="iconfont icon-jiantou"></i>
 									<span>2019幼儿教师综合资格证书</span>
@@ -630,40 +630,198 @@
 			<!-- 新闻动态 -->
 			<div class="newsDt">
 				<div class="jyxw">
-					<div class="title">
-						<div class="new_icon">
+					<div class="title clearfix">
+						<div class="new_icon fl">
 							<span>图标</span>
-								<span>教育新闻</span>
+							<span>教育新闻</span>
+							<span class="sg_skew"></span>
+							<span class="bg_line"></span>
 						</div>
-						<span class="more">MORE+</span>
+						<span class="bg_line"></span>
+						<span class="bg_line"></span>
+						<span class="bg_line"></span>
+						<span class="more fr">MORE+</span>
 					</div>
 					<div class="content">
-						<div>
-							<img src="" alt="">
-							<img src="" alt="">
-							<ul>
-								<li>
-									<span class="iconfont icon-jiantou"></span>
-									<span>哈尔滨哈尔滨哈尔滨哈尔滨哈尔滨哈尔滨哈尔滨哈尔滨哈尔滨哈尔滨哈尔滨哈尔滨哈尔滨哈尔滨哈尔滨哈尔滨哈尔滨</span>
-								</li>
-							</ul>
+						<div class="clearfix news_box">
+							<div class="fl"><img src="./../../static/images/jyxw1.png" alt=""></div>
+							<div class="fr"><img src="./../../static/images/jyxw2.png" alt=""></div>
+
 						</div>
+						<ul class="textList">
+							<li>
+								<span class="iconfont icon-jiantou"></span>
+								<span>哈尔滨哈尔滨哈尔滨哈尔滨哈尔滨哈尔滨哈尔滨哈尔滨哈</span>
+							</li>
+							<li>
+								<span class="iconfont icon-jiantou"></span>
+								<span>哈尔滨哈尔滨哈尔滨哈尔滨哈尔滨哈尔滨哈尔滨哈尔滨哈</span>
+							</li>
+							<li>
+								<span class="iconfont icon-jiantou"></span>
+								<span>哈尔滨哈尔滨哈尔滨哈尔滨哈尔滨哈尔滨哈尔滨哈尔滨哈</span>
+							</li>
+							<li>
+								<span class="iconfont icon-jiantou"></span>
+								<span>哈尔滨哈尔滨哈尔滨哈尔滨哈尔滨哈尔滨哈尔滨哈尔滨哈</span>
+							</li>
+							<li>
+								<span class="iconfont icon-jiantou"></span>
+								<span>哈尔滨哈尔滨哈尔滨哈尔滨哈尔滨哈尔滨哈尔滨哈尔滨哈</span>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<!-- 热门课程 -->
+				<div class="jyxw">
+					<div class="title clearfix">
+						<div class="new_icon fl">
+							<span>图标</span>
+							<span>教育新闻</span>
+							<span class="sg_skew"></span>
+							<span class="bg_line"></span>
+						</div>
+						<span class="bg_line"></span>
+						<span class="bg_line"></span>
+						<span class="bg_line"></span>
+						<span class="more fr">MORE+</span>
+					</div>
+					<div class="content">
+						<div class="clearfix news_box">
+							<div class="fl"><img src="./../../static/images/jyxw1.png" alt=""></div>
+							<div class="fr"><img src="./../../static/images/jyxw2.png" alt=""></div>
+				
+						</div>
+						<ul class="textList">
+							<li>
+								<span class="iconfont icon-jiantou"></span>
+								<span>哈尔滨哈尔滨哈尔滨哈尔滨哈尔滨哈尔滨哈尔滨哈尔滨哈</span>
+							</li>
+							<li>
+								<span class="iconfont icon-jiantou"></span>
+								<span>哈尔滨哈尔滨哈尔滨哈尔滨哈尔滨哈尔滨哈尔滨哈尔滨哈</span>
+							</li>
+							<li>
+								<span class="iconfont icon-jiantou"></span>
+								<span>哈尔滨哈尔滨哈尔滨哈尔滨哈尔滨哈尔滨哈尔滨哈尔滨哈</span>
+							</li>
+							<li>
+								<span class="iconfont icon-jiantou"></span>
+								<span>哈尔滨哈尔滨哈尔滨哈尔滨哈尔滨哈尔滨哈尔滨哈尔滨哈</span>
+							</li>
+							<li>
+								<span class="iconfont icon-jiantou"></span>
+								<span>哈尔滨哈尔滨哈尔滨哈尔滨哈尔滨哈尔滨哈尔滨哈尔滨哈</span>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<!-- 人气学校 -->
+				<div class="jyxw">
+					<div class="title clearfix">
+						<div class="new_icon fl">
+							<span>图标</span>
+							<span>教育新闻</span>
+							<span class="sg_skew"></span>
+							<span class="bg_line"></span>
+						</div>
+						<span class="bg_line"></span>
+						<span class="bg_line"></span>
+						<span class="bg_line"></span>
+						<span class="more fr">MORE+</span>
+					</div>
+					<div class="content">
+						<div class="clearfix news_box">
+							<div class="fl"><img src="./../../static/images/jyxw1.png" alt=""></div>
+							<div class="fr"><img src="./../../static/images/jyxw2.png" alt=""></div>
+				
+						</div>
+						<ul class="textList">
+							<li>
+								<span class="iconfont icon-jiantou"></span>
+								<span>哈尔滨哈尔滨哈尔滨哈尔滨哈尔滨哈尔滨哈尔滨哈尔滨哈</span>
+							</li>
+							<li>
+								<span class="iconfont icon-jiantou"></span>
+								<span>哈尔滨哈尔滨哈尔滨哈尔滨哈尔滨哈尔滨哈尔滨哈尔滨哈</span>
+							</li>
+							<li>
+								<span class="iconfont icon-jiantou"></span>
+								<span>哈尔滨哈尔滨哈尔滨哈尔滨哈尔滨哈尔滨哈尔滨哈尔滨哈</span>
+							</li>
+							<li>
+								<span class="iconfont icon-jiantou"></span>
+								<span>哈尔滨哈尔滨哈尔滨哈尔滨哈尔滨哈尔滨哈尔滨哈尔滨哈</span>
+							</li>
+							<li>
+								<span class="iconfont icon-jiantou"></span>
+								<span>哈尔滨哈尔滨哈尔滨哈尔滨哈尔滨哈尔滨哈尔滨哈尔滨哈</span>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<!-- 特惠信息 -->
+				<div class="jyxw">
+					<div class="title clearfix">
+						<div class="new_icon fl">
+							<span>图标</span>
+							<span>教育新闻</span>
+							<span class="sg_skew"></span>
+							<span class="bg_line"></span>
+						</div>
+						<span class="bg_line"></span>
+						<span class="bg_line"></span>
+						<span class="bg_line"></span>
+						<span class="more fr">MORE+</span>
+					</div>
+					<div class="content">
+						<div class="clearfix news_box">
+							<div class="fl"><img src="./../../static/images/jyxw1.png" alt=""></div>
+							<div class="fr"><img src="./../../static/images/jyxw2.png" alt=""></div>
+				
+						</div>
+						<ul class="textList">
+							<li>
+								<span class="iconfont icon-jiantou"></span>
+								<span>哈尔滨哈尔滨哈尔滨哈尔滨哈尔滨哈尔滨哈尔滨哈尔滨哈</span>
+							</li>
+							<li>
+								<span class="iconfont icon-jiantou"></span>
+								<span>哈尔滨哈尔滨哈尔滨哈尔滨哈尔滨哈尔滨哈尔滨哈尔滨哈</span>
+							</li>
+							<li>
+								<span class="iconfont icon-jiantou"></span>
+								<span>哈尔滨哈尔滨哈尔滨哈尔滨哈尔滨哈尔滨哈尔滨哈尔滨哈</span>
+							</li>
+							<li>
+								<span class="iconfont icon-jiantou"></span>
+								<span>哈尔滨哈尔滨哈尔滨哈尔滨哈尔滨哈尔滨哈尔滨哈尔滨哈</span>
+							</li>
+							<li>
+								<span class="iconfont icon-jiantou"></span>
+								<span>哈尔滨哈尔滨哈尔滨哈尔滨哈尔滨哈尔滨哈尔滨哈尔滨哈</span>
+							</li>
+						</ul>
 					</div>
 				</div>
 			</div>
 		</div>
+		<!-- 底部 -->
+		<my-footer></my-footer>
 	</div>
 </template>
 
 <script>
-	import Header from './Header';
-	import Banner from './Banner';
+	import Header from './common/Header';
+	import Banner from './common/Banner';
+	import Footer from './common/Footer'
 
 	export default {
 
 		components: {
-			Header,
+			'my-header':Header,
 			'my-banner': Banner,
+			'my-footer':Footer,
 		},
 		data() {
 			return {
@@ -693,7 +851,7 @@
 				imgLoop_three: [{
 						srcName: require('./../../static/images/lbt.png')
 					},
-					
+
 				],
 			};
 			// imgHeight:400
@@ -942,9 +1100,11 @@
 
 			.content {
 				padding-top: 30px;
-				>div{
+
+				>div {
 					width: 221px;
-					img{
+
+					img {
 						width: 100%;
 					}
 				}
@@ -955,7 +1115,7 @@
 
 					ul {
 						width: 100%;
-						
+
 
 						li {
 							float: left;
@@ -1081,15 +1241,115 @@
 			}
 		}
 	}
-	.zgks{
+
+	.zgks {
 		margin-top: 45px;
-		
+
 	}
-	.xxfd{
+
+	.xxfd {
 		margin-top: 45px;
+	}
+
+	.lbt3 {
+		margin-top: 38px;
+		background-color: #70d5cd;
+	}
+
+	// 教育新闻
+
+	.jyxw {
+		width: 49%;
+		border: 1px solid #d9d9d9;
+		&:nth-child(n+3){
+			margin-top:20px; 
 		}
-		.lbt3{
-			margin-top: 38px;
-			background-color: #70d5cd;
+		
+
+		.title {
+			border-bottom: 1px solid #ff6433;
+
+			.new_icon {
+				line-height: 50px;
+				color: white;
+				background-color: #ff5722;
+				font-size: 22px;
+				padding: 0px 17px;
+				position: relative;
+
+				.sg_skew {
+					display: inline-block;
+					width: 20px;
+					height: 50px;
+					transform: skew(14deg);
+					position: absolute;
+					top: 0;
+					right: -10px;
+					background-color: #ff5722;
+
+				}
+
+				.bg_line::before {
+					display: block;
+					content: '';
+					width: 2px;
+					height: 50px;
+					background-color: #ff5722;
+					transform: skew(14deg);
+					position: absolute;
+					right: -15px;
+					top: 0;
+				}
+			}
+
+			.more {
+				font-size: 14px;
+				color: #ff5722;
+				line-height: 50px;
+			}
 		}
+
+		.content {
+
+			padding: 27px;
+
+			.news_box {
+				&>div {
+					width: 48%;
+
+					// padding-right: 22px;
+					img {
+						width: 100%;
+					}
+				}
+			}
+
+			.textList {
+				padding-top: 30px;
+				font-size: 15px;
+				color: #666666;
+
+				li {
+					border-bottom: 1px dashed #e4e0e0;
+					height: 40px;
+					line-height: 40px;
+
+					& span:last-child {
+						padding-left: 20px;
+					}
+
+					&+li {
+						border-bottom: none;
+					}
+
+				}
+			}
+		}
+	}
+	.newsDt{
+		display: flex;
+		justify-content: space-between;
+		 flex-wrap:wrap;
+		 margin-top: 40px;
+	}
 </style>

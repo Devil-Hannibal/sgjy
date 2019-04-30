@@ -4,7 +4,7 @@
       <el-header>
         <div class="card">
           <!-- 登录注册区域 -->
-          <div class="nav">
+          <!-- <div class="nav">
             <el-row>
               <el-col :span="12">
                 <div class="fl_title">欢迎来到*-*******网！</div>
@@ -16,7 +16,8 @@
                 </div>
               </el-col>
             </el-row>
-          </div>
+          </div> -->
+					<login></login>
           <!-- 搜索区域 -->
           <div>
             <el-row>
@@ -104,10 +105,25 @@
         </div>
       </el-header>
     </el-container>
+		<!-- 遮罩层 -->
+		<!-- <bg-model></bg-model> -->
   </div>
 </template>
 
 <script>
+	// import Bgmodel from './Bgmodel.vue'
+	import Login from './Login.vue'
+	
+	export default{
+		components:{
+			'login':Login,
+		},
+		data(){
+			return{
+				
+			}
+		}
+	}
 </script>
 
 <style scoped>
@@ -125,7 +141,7 @@
   width: 1200px;
   margin: 0 auto;
 }
-.nav {
+/* .nav {
   height: 40px;
   background-color: #f5f5f5;
   line-height: 40px;
@@ -136,7 +152,7 @@
 }
 .fr_title {
   text-align: right;
-}
+} */
 /* 搜索logo区样式 */
 .search {
   margin-top: 25px;

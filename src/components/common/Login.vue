@@ -22,7 +22,7 @@
 					<div class="el-icon-close pos2" @click="choseBtns(false)"></div>
 					<p class="title">注册思古教育</p>
 					<!-- 注册表单 -->
-					<el-form :model="surrceForm" :rules="rules" ref="surrceForm" class="surrceFroms">
+					<el-form :model="surrceForm" :rules="rules1" ref="surrceForm" class="surrceFroms">
 						<el-form-item prop="phone">
 							<el-input type="text" v-model="surrceForm.phone" prefix-icon="el-icon-search" placeholder="请输入手机号码 " maxlength="11"></el-input>
 						</el-form-item>
@@ -61,7 +61,7 @@
 							<el-input type="text" v-model="loginFrom.pass" prefix-icon="el-icon-search" placeholder="请输入密码"></el-input>
 						</el-form-item>
 						<el-form-item class="el-form-item_btn">
-							<el-button type="primary" class="LoginBtn"  @click="login">登录</el-button>
+							<el-button type="primary" class="LoginBtn" @click="login">登录</el-button>
 						</el-form-item>
 					</el-form>
 					<!-- 手机登录表单-->
@@ -71,6 +71,7 @@
 						</el-form-item>
 						<el-form-item prop="code">
 							<el-input type="text" v-model="loginFrom.code" prefix-icon="el-icon-search" placeholder="请输入验证码"></el-input>
+							<div class="posText" @click="getCode">获取验证码</div>
 						</el-form-item>
 						<el-form-item class="el-form-item_btn">
 							<el-button type="primary" class="LoginBtn" @click="login">登录</el-button>
@@ -96,10 +97,50 @@
 			'bg-model': Bgmodel,
 		},
 		data() {
+			// <!--验证手机号是否合法-->
+			let checkTel = (rule, value, callback) => {
+				if (value === '') {
+					callback(new Error('请输入手机号码'))
+				} else if (!this.checkMobile(value)) {
+					callback(new Error('手机号码不合法'))
+				} else {
+					callback()
+				}
+			}
+			//  <!--验证码是否为空-->
+			let checkSmscode = (rule, value, callback) => {
+				if (value === '') {
+					callback(new Error('请输入手机验证码'))
+				} else {
+					callback()
+				}
+			}
+			// <!--验证密码-->
+			let validatePass = (rule, value, callback) => {
+				if (value === "") {
+					callback(new Error("请输入密码"))
+				} else {
+					if (this.surrceForm.checkPass !== "") {
+						this.$refs.surrceForm.validateField("checkPass");
+					}
+					callback()
+				}
+			}
+			// <!--二次验证密码-->
+			let validatePass2 = (rule, value, callback) => {
+				if (value === "") {
+					callback(new Error("请再次输入密码"));
+				} else if (value !== this.surrceForm.pass) {
+					callback(new Error("两次输入密码不一致!"));
+				} else {
+					callback();
+				}
+			};
 			return {
 				isSurrce: false, //判断登录还是注册 true是注册。false 是登录
 				isPcLogin: false, //判断PC登录还是手机端登录 true是PC。false 是手机
 				isBgmodel: false,
+				isCodeTrue: false, //验证码一直为true，反之为false
 				surrceForm: { // 注册验证表单
 					pass: '',
 					checkPass: '',
@@ -113,40 +154,25 @@
 					code: ''
 				},
 
-				rules: {
-					phone: [{
-							required: true,
-							message: "请输入手机号",
-							trigger: "blur"
-						},
-						// {
-						// 	validator: function(rule, value, callback) {
-						// 		if (/^1([38][0-9]|4[579]|5[0-3,5-9]|6[6]|7[0135678]|9[89])\d{8}$/.test(value) == false) {
-						// 			callback(new Error("请输入正确的手机号"));
-						// 		} else {
-						// 			callback();
-						// 		}
-						// 	},
-						// }
-
-					],
-					code: [{
-						required: true,
-						message: "请输入验证码",
-						trigger: "blur"
-					}],
+				rules1: {
 					pass: [{
-						// validator: validatePass,
-						required: true,
+						validator: validatePass,
 						trigger: 'blur'
 					}],
 					checkPass: [{
-						// validator: validatePass2,
-						required: true,
+						validator: validatePass2,
+						trigger: 'blur'
+					}],
+					phone: [{
+						validator: checkTel,
+						trigger: 'blur'
+					}],
+					code: [{
+						validator: checkSmscode,
 						trigger: 'blur'
 					}],
 				},
-				rule: {}
+				rules: {}
 			}
 		},
 
@@ -154,6 +180,15 @@
 
 		},
 		methods: {
+			// 验证手机号
+			checkMobile(str) {
+				let re = /^1\d{10}$/
+				if (re.test(str)) {
+					return true;
+				} else {
+					return false;
+				}
+			},
 			// 注册按钮
 			getSurrce(bool) {
 				this.isBgmodel = bool
@@ -173,44 +208,67 @@
 			// 获取验证马
 			getCode() {
 				let queryString = {
-					phone: this.surrceForm.phone
+					phone: this.surrceForm.phone || this.loginFrom.phone
 				}
-				// this.$axios.post('/api/reg', this.surrceForm)
 				this.$axios.post("/api/sendCode", queryString).then(res => {
 
 				})
-				// sendCode(queryString).then(res=>{
-				// 	alert(123);
-				// })
 			},
+			// 用户校正验证码
+			matchingCode() {
+				let queryString = {
+					phone: this.surrceForm.phone || this.loginFrom.phone,
+					ck_code: this.loginFrom.code || this.surrceForm.code,
+				}
+				this.$axios.post('/api/check_code', queryString).then(res => {
+					if (res.data.matching == 1) {
+						alert('验证通过')
+						this.isCodeTrue = true
+					} else {
+						alert('验证失败')
+						this.isCodeTrue = false;
+						return false
+					}
+				})
+			},
+			// 注册用户信息
 			regInfo() {
+				this.matchingCode()
 				let queryString = {
 					phone: this.surrceForm.phone,
 					code: this.surrceForm.code,
 					password: this.surrceForm.pass
 				}
-				this.$axios.get("/api/reg", queryString).then(res => {
-					console.log(res)
+				this.$axios.post("/api/reg", queryString).then(res => {
+					console.log(res.data)
+					alert('注册成功')
 				})
-				
+
+
+
 			},
-			login(){
-				let queryString={
-						userName:17645175927,//this.loginFrom.idName,
-						password:123456//this.loginFrom.pass
+			// 用户登录
+			login() {
+				this.matchingCode()
+				let queryString = {
+					userName: this.loginFrom.idName,
+					password: this.loginFrom.pass,
+					phone: this.loginFrom.phone,
+					code: this.loginFrom.code,
 				}
 				this.$axios.post("/api/login", queryString).then(res => {
-					var userInfo=res.data.user
-					// console.log(userInfo)
-					// return
-					// common.alertmsg()
-					// common.sessionset('userName',userInfo)
-					// var Jsxs=JSON.stringify(userInfo)
-					if(typeof(userInfo)=='object'){
-						alert('aaaa ')
-					}
-					window.sessionStorage.setItem('userName',userInfo)
+					// var userInfo = res.data.user
+					// common.sessionset('userName', userInfo)
+					this.$router.push({
+						path: '/'
+					})
+
+
+
+
 				})
+
+
 			}
 		},
 

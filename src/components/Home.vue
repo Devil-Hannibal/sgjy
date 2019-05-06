@@ -107,7 +107,7 @@
 						</div>
 					</div>
 					<div class="banner_two">
-						<my-banner :imgList="imgLoop_two" :imgHeight="imgHeight_two"></my-banner>
+						<my-banner :imgList="imgLoop_two" :imgHeight="imgHeight_two" :isCarousel="isCarousel" :imgWidth="imgWidth"></my-banner>
 					</div>
 				</div>
 			</div>
@@ -825,6 +825,8 @@
 		},
 		data() {
 			return {
+				isCarousel:true,
+				imgWidth:33,
 				imgHeight_one: 328,
 				imgLoop_one: [{
 						srcName: require('./../../static/images/banner1.png')
@@ -846,6 +848,15 @@
 					{
 						srcName: require('./../../static/images/t3.png')
 					},
+					{
+							srcName: require('./../../static/images/t3.png')
+						},
+						{
+							srcName: require('./../../static/images/t2.png')
+						},
+						{
+							srcName: require('./../../static/images/t1.png')
+						},
 				],
 				imgHeight_three: 190,
 				imgLoop_three: [{
@@ -963,7 +974,8 @@
 
 	// 轮播图二
 	.banner_two {
-		width: 306px;
+		width: 932px;
+		height: 200px;
 	}
 
 	// 地区划分

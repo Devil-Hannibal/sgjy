@@ -140,7 +140,7 @@
 				isSurrce: false, //判断登录还是注册 true是注册。false 是登录
 				isPcLogin: false, //判断PC登录还是手机端登录 true是PC。false 是手机
 				isBgmodel: false,
-				isCodeTrue: false, //验证码一直为true，反之为false
+				isCodeTrue: true, //验证码一直为true，反之为false
 				surrceForm: { // 注册验证表单
 					pass: '',
 					checkPass: '',
@@ -233,7 +233,7 @@
 			},
 			// 注册用户信息
 			regInfo() {
-				this.matchingCode()
+				if(this.isCodeTrue==false) return;
 				let queryString = {
 					phone: this.surrceForm.phone,
 					code: this.surrceForm.code,
@@ -249,7 +249,7 @@
 			},
 			// 用户登录
 			login() {
-				this.matchingCode()
+				if(this.isCodeTrue==false) return;
 				let queryString = {
 					userName: this.loginFrom.idName,
 					password: this.loginFrom.pass,
@@ -257,11 +257,17 @@
 					code: this.loginFrom.code,
 				}
 				this.$axios.post("/api/login", queryString).then(res => {
-					// var userInfo = res.data.user
-					// common.sessionset('userName', userInfo)
-					this.$router.push({
-						path: '/'
-					})
+					if(res.data.result.code==1){
+						var userInfo = res.data.user
+						common.sessionset('userName', userInfo)
+							alert('登陆成功')
+						this.$router.push({
+							path: '/home'
+						})
+					}else{
+						alert(res.data.result.msg)
+					}
+					
 
 
 

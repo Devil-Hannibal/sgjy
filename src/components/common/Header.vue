@@ -79,26 +79,26 @@
             </div>
 
             <ul class="meus_ul">
-              <li>
-                <a href>关于我们</a>
+              <li @click="about">
+                关于我们
               </li>
               <li>
-                <a href>培训课程</a>
+                培训课程
               </li>
               <li>
-                <a href>培训学校</a>
+                培训学校
               </li>
               <li>
-                <a href>讯息资讯</a>
+                讯息资讯
               </li>
               <li>
-                <a href>教考知识</a>
+                教考知识
               </li>
               <li>
-                <a href>明星推荐</a>
+                明星推荐
               </li>
               <li>
-                <a href>联系我们</a>
+                联系我们
               </li>
             </ul>
           </div>
@@ -121,6 +121,14 @@
 		data(){
 			return{
 				
+			}
+		},
+		methods:{
+			// 跳转至关于我们
+			about(){
+				this.$router.push({
+					path:'./about'
+				})
 			}
 		}
 	}

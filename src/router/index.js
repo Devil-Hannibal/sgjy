@@ -12,10 +12,10 @@ export default new Router({
 			path: '/',
 			name: 'helloWord',
 			component: HelloWord,
-			// redirect: '/'
+			redirect: '/home',
 			children: [
 				{
-					path: '/',
+					path: '/home',
 					component: Home
 				},
 				// 关于我们

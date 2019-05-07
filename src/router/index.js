@@ -27,10 +27,17 @@ export default new Router({
 					redirect: '/about',
 					children:[
 						{path: '/nav/about',name: 'about',component: About},
-						{path: '/nav/talkme',name: 'talkMe',component: TalkMe}]
+						{path: '/nav/talkme',name: 'talkMe',component: TalkMe},
+                        {
+                            path: '/nav/CourseDetails',
+                            name: 'CourseDetails',
+                            component: res=> import('@/components/nav/CourseDetails')
+                        }
+                    ]
 				},
 			]
 		},
+
 		// {
 		//   path: '/',
 		//   name: 'home',

@@ -1,7 +1,7 @@
 <template>
   <div class="about">
     <!-- 公共头部 -->
-    <my-header></my-header>
+    <!-- <my-header></my-header> -->
     <!-- 轮播图 -->
     <my-banner :imgList="imgList" :imgHeight="imgHeight"></my-banner>
     <!-- 内容 -->

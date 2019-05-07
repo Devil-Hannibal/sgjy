@@ -1,6 +1,5 @@
 <template>
 	<div class="home">
-		<my-header></my-header>
 		<!-- 内容区域 -->
 		<div class="container">
 			<!-- 轮播图与菜单区域 -->
@@ -111,7 +110,7 @@
 					</div>
 				</div>
 			</div>
-			<!-- 地区划分 -->
+						<!-- 地区划分 -->
 			<div class="dqhf ">
 				<div class="title clearfix">
 					<div>
@@ -132,14 +131,14 @@
 					<ul>
 						<li>
 							<div>
-								<img src="./../../static/images/adqhf.png" alt="">
+								<img src="./../../../static/images/adqhf.png" alt="">
 								<p class="txt">中推联合（北京）医学研究院</p>
 								<p class="txt1">
 									<span class="text-left">课程数量:197</span>
 									<span class="text-right">星级推荐
-										<i><img src="./../../static/images/start.png" alt="">
-											<img src="./../../static/images/start.png" alt="">
-											<img src="./../../static/images/start.png" alt="">
+										<i><img src="./../../../static/images/start.png" alt="">
+											<img src="./../../../static/images/start.png" alt="">
+											<img src="./../../../static/images/start.png" alt="">
 										</i>
 
 									</span>
@@ -148,14 +147,14 @@
 						</li>
 						<li>
 							<div>
-								<img src="./../../static/images/adqhf.png" alt="">
+								<img src="./../../../static/images/adqhf.png" alt="">
 								<p class="txt">中推联合（北京）医学研究院</p>
 								<p class="txt1">
 									<span class="text-left">课程数量:197</span>
 									<span class="text-right">星级推荐
-										<i><img src="./../../static/images/start.png" alt="">
-											<img src="./../../static/images/start.png" alt="">
-											<img src="./../../static/images/start.png" alt="">
+										<i><img src="./../../../static/images/start.png" alt="">
+											<img src="./../../../static/images/start.png" alt="">
+											<img src="./../../../static/images/start.png" alt="">
 										</i>
 
 									</span>
@@ -164,40 +163,41 @@
 						</li>
 						<li>
 							<div>
-								<img src="./../../static/images/adqhf.png" alt="">
+								<img src="./../../../static/images/adqhf.png" alt="">
 								<p class="txt">中推联合（北京）医学研究院</p>
 								<p class="txt1">
 									<span class="text-left">课程数量:197</span>
 									<span class="text-right">星级推荐
-										<i><img src="./../../static/images/start.png" alt="">
-											<img src="./../../static/images/start.png" alt="">
-											<img src="./../../static/images/start.png" alt="">
+										<i><img src="./../../../static/images/start.png" alt="">
+											<img src="./../../../static/images/start.png" alt="">
+											<img src="./../../../static/images/start.png" alt="">
 										</i>
-
+						
 									</span>
 								</p>
 							</div>
 						</li>
-						<li>
-							<div>
-								<img src="./../../static/images/adqhf.png" alt="">
-								<p class="txt">中推联合（北京）医学研究院</p>
-								<p class="txt1">
-									<span class="text-left">课程数量:197</span>
-									<span class="text-right">星级推荐
-										<i><img src="./../../static/images/start.png" alt="">
-											<img src="./../../static/images/start.png" alt="">
-											<img src="./../../static/images/start.png" alt="">
-										</i>
-
-									</span>
-								</p>
-							</div>
-						</li>
+					<li>
+						<div>
+							<img src="./../../../static/images/adqhf.png" alt="">
+							<p class="txt">中推联合（北京）医学研究院</p>
+							<p class="txt1">
+								<span class="text-left">课程数量:197</span>
+								<span class="text-right">星级推荐
+									<i><img src="./../../../static/images/start.png" alt="">
+										<img src="./../../../static/images/start.png" alt="">
+										<img src="./../../../static/images/start.png" alt="">
+									</i>
+					
+								</span>
+							</p>
+						</div>
+					</li>
 					</ul>
 				</div>
 			</div>
-			<!-- 教育专栏 -->
+			
+<!-- 教育专栏 -->
 			<div class="education">
 				<div class="head">教育专栏</div>
 				<div class="yypx clearfix">
@@ -213,12 +213,12 @@
 							</ul>
 						</div>
 						<div class="content clearfix">
-							<div class="fl"> <img src="./../../static/images/1.png" alt=""></div>
+							<div class="fl"> <img src="./../../../static/images/1.png" alt=""></div>
 							<div class="fl details">
 								<ul class="clearfix">
 									<li>
 										<div>
-											<img src="./../../static/images/px.png" alt="">
+											<img src="./../../../static/images/px.png" alt="">
 											<p class="txt">中推联合（北京）医学研究院</p>
 											<p class="txt1">
 												<span class="text-left">价格:&yen;10097</span>
@@ -228,7 +228,7 @@
 									</li>
 									<li>
 										<div>
-											<img src="./../../static/images/px.png" alt="">
+											<img src="./../../../static/images/px.png" alt="">
 											<p class="txt">中推联合（北京）医学研究院</p>
 											<p class="txt1">
 												<span class="text-left">价格:&yen;10097</span>
@@ -238,7 +238,7 @@
 									</li>
 									<li>
 										<div>
-											<img src="./../../static/images/px.png" alt="">
+											<img src="./../../../static/images/px.png" alt="">
 											<p class="txt">中推联合（北京）医学研究院</p>
 											<p class="txt1">
 												<span class="text-left">价格:&yen;10097</span>
@@ -248,7 +248,7 @@
 									</li>
 									<li>
 										<div>
-											<img src="./../../static/images/px.png" alt="">
+											<img src="./../../../static/images/px.png" alt="">
 											<p class="txt">中推联合（北京）医学研究院</p>
 											<p class="txt1">
 												<span class="text-left">价格:&yen;10097</span>
@@ -258,7 +258,7 @@
 									</li>
 									<li>
 										<div>
-											<img src="./../../static/images/px.png" alt="">
+											<img src="./../../../static/images/px.png" alt="">
 											<p class="txt">中推联合（北京）医学研究院</p>
 											<p class="txt1">
 												<span class="text-left">价格:&yen;10097</span>
@@ -268,7 +268,7 @@
 									</li>
 									<li>
 										<div>
-											<img src="./../../static/images/px.png" alt="">
+											<img src="./../../../static/images/px.png" alt="">
 											<p class="txt">中推联合（北京）医学研究院</p>
 											<p class="txt1">
 												<span class="text-left">价格:&yen;10097</span>
@@ -290,7 +290,7 @@
 						<div class="hot_content">
 							<ul class="imgTxtList">
 								<li>
-									<img src="./../../static/images/px.png" alt="">
+									<img src="./../../../static/images/px.png" alt="">
 									<div class="fr txt">
 										<p>会计职称精品班</p>
 										<p>培训周期:6个月</p>
@@ -298,7 +298,7 @@
 									</div>
 								</li>
 								<li>
-									<img src="./../../static/images/px.png" alt="">
+									<img src="./../../../static/images/px.png" alt="">
 									<div class="fr txt">
 										<p>会计职称精品班</p>
 										<p>培训周期:6个月</p>
@@ -354,12 +354,12 @@
 							</ul>
 						</div>
 						<div class="content clearfix">
-							<div class="fl"> <img src="./../../static/images/1.png" alt=""></div>
+							<div class="fl"> <img src="./../../../static/images/1.png" alt=""></div>
 							<div class="fl details">
 								<ul class="clearfix">
 									<li>
 										<div>
-											<img src="./../../static/images/px.png" alt="">
+											<img src="./../../../static/images/px.png" alt="">
 											<p class="txt">中推联合（北京）医学研究院</p>
 											<p class="txt1">
 												<span class="text-left">价格:&yen;10097</span>
@@ -369,7 +369,7 @@
 									</li>
 									<li>
 										<div>
-											<img src="./../../static/images/px.png" alt="">
+											<img src="./../../../static/images/px.png" alt="">
 											<p class="txt">中推联合（北京）医学研究院</p>
 											<p class="txt1">
 												<span class="text-left">价格:&yen;10097</span>
@@ -379,7 +379,7 @@
 									</li>
 									<li>
 										<div>
-											<img src="./../../static/images/px.png" alt="">
+											<img src="./../../../static/images/px.png" alt="">
 											<p class="txt">中推联合（北京）医学研究院</p>
 											<p class="txt1">
 												<span class="text-left">价格:&yen;10097</span>
@@ -389,7 +389,7 @@
 									</li>
 									<li>
 										<div>
-											<img src="./../../static/images/px.png" alt="">
+											<img src="./../../../static/images/px.png" alt="">
 											<p class="txt">中推联合（北京）医学研究院</p>
 											<p class="txt1">
 												<span class="text-left">价格:&yen;10097</span>
@@ -399,7 +399,7 @@
 									</li>
 									<li>
 										<div>
-											<img src="./../../static/images/px.png" alt="">
+											<img src="./../../../static/images/px.png" alt="">
 											<p class="txt">中推联合（北京）医学研究院</p>
 											<p class="txt1">
 												<span class="text-left">价格:&yen;10097</span>
@@ -409,7 +409,7 @@
 									</li>
 									<li>
 										<div>
-											<img src="./../../static/images/px.png" alt="">
+											<img src="./../../../static/images/px.png" alt="">
 											<p class="txt">中推联合（北京）医学研究院</p>
 											<p class="txt1">
 												<span class="text-left">价格:&yen;10097</span>
@@ -431,7 +431,7 @@
 						<div class="hot_content">
 							<ul class="imgTxtList">
 								<li>
-									<img src="./../../static/images/px.png" alt="">
+									<img src="./../../../static/images/px.png" alt="">
 									<div class="fr txt">
 										<p>会计职称精品班</p>
 										<p>培训周期:6个月</p>
@@ -439,7 +439,7 @@
 									</div>
 								</li>
 								<li>
-									<img src="./../../static/images/px.png" alt="">
+									<img src="./../../../static/images/px.png" alt="">
 									<div class="fr txt">
 										<p>会计职称精品班</p>
 										<p>培训周期:6个月</p>
@@ -495,12 +495,12 @@
 							</ul>
 						</div>
 						<div class="content clearfix">
-							<div class="fl"> <img src="./../../static/images/1.png" alt=""></div>
+							<div class="fl"> <img src="./../../../static/images/1.png" alt=""></div>
 							<div class="fl details">
 								<ul class="clearfix">
 									<li>
 										<div>
-											<img src="./../../static/images/px.png" alt="">
+											<img src="./../../../static/images/px.png" alt="">
 											<p class="txt">中推联合（北京）医学研究院</p>
 											<p class="txt1">
 												<span class="text-left">价格:&yen;10097</span>
@@ -510,7 +510,7 @@
 									</li>
 									<li>
 										<div>
-											<img src="./../../static/images/px.png" alt="">
+											<img src="./../../../static/images/px.png" alt="">
 											<p class="txt">中推联合（北京）医学研究院</p>
 											<p class="txt1">
 												<span class="text-left">价格:&yen;10097</span>
@@ -520,7 +520,7 @@
 									</li>
 									<li>
 										<div>
-											<img src="./../../static/images/px.png" alt="">
+											<img src="./../../../static/images/px.png" alt="">
 											<p class="txt">中推联合（北京）医学研究院</p>
 											<p class="txt1">
 												<span class="text-left">价格:&yen;10097</span>
@@ -530,7 +530,7 @@
 									</li>
 									<li>
 										<div>
-											<img src="./../../static/images/px.png" alt="">
+											<img src="./../../../static/images/px.png" alt="">
 											<p class="txt">中推联合（北京）医学研究院</p>
 											<p class="txt1">
 												<span class="text-left">价格:&yen;10097</span>
@@ -540,7 +540,7 @@
 									</li>
 									<li>
 										<div>
-											<img src="./../../static/images/px.png" alt="">
+											<img src="./../../../static/images/px.png" alt="">
 											<p class="txt">中推联合（北京）医学研究院</p>
 											<p class="txt1">
 												<span class="text-left">价格:&yen;10097</span>
@@ -550,7 +550,7 @@
 									</li>
 									<li>
 										<div>
-											<img src="./../../static/images/px.png" alt="">
+											<img src="./../../../static/images/px.png" alt="">
 											<p class="txt">中推联合（北京）医学研究院</p>
 											<p class="txt1">
 												<span class="text-left">价格:&yen;10097</span>
@@ -572,7 +572,7 @@
 						<div class="hot_content">
 							<ul class="imgTxtList">
 								<li>
-									<img src="./../../static/images/px.png" alt="">
+									<img src="./../../../static/images/px.png" alt="">
 									<div class="fr txt">
 										<p>会计职称精品班</p>
 										<p>培训周期:6个月</p>
@@ -580,7 +580,7 @@
 									</div>
 								</li>
 								<li>
-									<img src="./../../static/images/px.png" alt="">
+									<img src="./../../../static/images/px.png" alt="">
 									<div class="fr txt">
 										<p>会计职称精品班</p>
 										<p>培训周期:6个月</p>
@@ -624,6 +624,8 @@
 				</div>
 				<!-- END -->
 			</div>
+
+			<!-- 轮播图3 -->
 			<div class="lbt3">
 				<my-banner :imgList="imgLoop_three" :imgHeight="imgHeight_three"></my-banner>
 			</div>
@@ -644,8 +646,8 @@
 					</div>
 					<div class="content">
 						<div class="clearfix news_box">
-							<div class="fl"><img src="./../../static/images/jyxw1.png" alt=""></div>
-							<div class="fr"><img src="./../../static/images/jyxw2.png" alt=""></div>
+							<div class="fl"><img src="./../../../static/images/jyxw1.png" alt=""></div>
+							<div class="fr"><img src="./../../../static/images/jyxw2.png" alt=""></div>
 
 						</div>
 						<ul class="textList">
@@ -688,9 +690,9 @@
 					</div>
 					<div class="content">
 						<div class="clearfix news_box">
-							<div class="fl"><img src="./../../static/images/jyxw1.png" alt=""></div>
-							<div class="fr"><img src="./../../static/images/jyxw2.png" alt=""></div>
-				
+							<div class="fl"><img src="./../../../static/images/jyxw1.png" alt=""></div>
+							<div class="fr"><img src="./../../../static/images/jyxw2.png" alt=""></div>
+
 						</div>
 						<ul class="textList">
 							<li>
@@ -732,9 +734,9 @@
 					</div>
 					<div class="content">
 						<div class="clearfix news_box">
-							<div class="fl"><img src="./../../static/images/jyxw1.png" alt=""></div>
-							<div class="fr"><img src="./../../static/images/jyxw2.png" alt=""></div>
-				
+							<div class="fl"><img src="./../../../static/images/jyxw1.png" alt=""></div>
+							<div class="fr"><img src="./../../../static/images/jyxw2.png" alt=""></div>
+
 						</div>
 						<ul class="textList">
 							<li>
@@ -776,9 +778,9 @@
 					</div>
 					<div class="content">
 						<div class="clearfix news_box">
-							<div class="fl"><img src="./../../static/images/jyxw1.png" alt=""></div>
-							<div class="fr"><img src="./../../static/images/jyxw2.png" alt=""></div>
-				
+							<div class="fl"><img src="./../../../static/images/jyxw1.png" alt=""></div>
+							<div class="fr"><img src="./../../../static/images/jyxw2.png" alt=""></div>
+
 						</div>
 						<ul class="textList">
 							<li>
@@ -805,62 +807,69 @@
 					</div>
 				</div>
 			</div>
+
+
+
+
+
 		</div>
 		<!-- 底部 -->
-		<my-footer></my-footer>
+		<router-view></router-view>
+	
 	</div>
 </template>
 
 <script>
-	import Header from './common/Header';
-	import Banner from './common/Banner';
-	import Footer from './common/Footer'
+	// import Header from './../common/Header';
+	import Banner from './../common/Banner';
+	// import Footer from './../common/Footer'
+	// import About from './../about/About'
 
 	export default {
 
 		components: {
-			'my-header':Header,
+			// 'my-header': Header,
 			'my-banner': Banner,
-			'my-footer':Footer,
+			// 'my-footer': Footer,
 		},
 		data() {
 			return {
-				isCarousel:true,
-				imgWidth:33,
+				isCarousel: true,
+				imgWidth: 33,
 				imgHeight_one: 328,
 				imgLoop_one: [{
-						srcName: require('./../../static/images/banner1.png')
+						srcName: require('./../../../static/images/banner1.png')
 					},
 					{
-						srcName: require('./../../static/images/banner2.png')
+						srcName: require('./../../../static/images/banner2.png')
 					},
 					{
-						srcName: require('./../../static/images/banner3.png')
+						srcName: require('./../../../static/images/banner3.png')
 					},
 				],
 				imgHeight_two: 200,
 				imgLoop_two: [{
-						srcName: require('./../../static/images/t1.png')
+						srcName: require('./../../../static/images/t1.png')
 					},
 					{
-						srcName: require('./../../static/images/t2.png')
+						srcName: require('./../../../static/images/t2.png')
 					},
 					{
-						srcName: require('./../../static/images/t3.png')
+						srcName: require('./../../../static/images/t3.png')
 					},
 					{
-							srcName: require('./../../static/images/t3.png')
-						},
-						{
-							srcName: require('./../../static/images/t2.png')
-						},
-						{
-							srcName: require('./../../static/images/t1.png')
-						},
+						srcName: require('./../../../static/images/t3.png')
+					},
+					{
+						srcName: require('./../../../static/images/t2.png')
+					},
+					{
+						srcName: require('./../../../static/images/t1.png')
+					},
 				],
 				imgHeight_three: 190,
 				imgLoop_three: [{
-						srcName: require('./../../static/images/lbt.png')
+						srcName: require('./../../../static/images/lbt.png')
 					},
 
 				],
@@ -868,7 +877,7 @@
 			// imgHeight:400
 		},
 		methods: {}
-	};
+	}
 </script>
 
 <style lang="less" scoped="scoped">
@@ -1273,10 +1282,11 @@
 	.jyxw {
 		width: 49%;
 		border: 1px solid #d9d9d9;
-		&:nth-child(n+3){
-			margin-top:20px; 
+
+		&:nth-child(n+3) {
+			margin-top: 20px;
 		}
-		
+
 
 		.title {
 			border-bottom: 1px solid #ff6433;
@@ -1358,10 +1368,11 @@
 			}
 		}
 	}
-	.newsDt{
+
+	.newsDt {
 		display: flex;
 		justify-content: space-between;
-		 flex-wrap:wrap;
-		 margin-top: 40px;
+		flex-wrap: wrap;
+		margin-top: 40px;
 	}
 </style>

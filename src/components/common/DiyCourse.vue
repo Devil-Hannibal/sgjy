@@ -1,119 +1,121 @@
 <template>
 				<!-- 右边内容 -->
-	<div class="fr_content">
-	
-		<div class="reserveKc">
-			<div class="title">
-				<span><img src="./../../../static/images/hq.png" alt=""></span>
-				<span class="text">个性定制课程</span>
+	<div class="diyCourse">
+		<div class="fr_content">
+		
+			<div class="reserveKc">
+				<div class="title">
+					<span><img src="./../../../static/images/hq.png" alt=""></span>
+					<span class="text">个性定制课程</span>
+				</div>
+				<div class="content">
+					
+					<el-form :model="formLabelAlign">
+						<el-form-item label="姓名:">
+							<!-- <lable>啊</lable> -->
+							<el-input v-model="formLabelAlign.name"></el-input>
+		
+						</el-form-item>
+						<el-form-item label="电话:">
+							<el-input v-model="formLabelAlign.phone"></el-input>
+						</el-form-item>
+						<el-form-item label="备注:">
+							<el-input v-model="formLabelAlign.message" type="textarea" rows=3></el-input>
+						</el-form-item>
+						<el-form-item>
+							<el-button class="btn">立即预约</el-button>
+						</el-form-item>
+					</el-form>
+				</div>
 			</div>
-			<div class="content">
-				
-				<el-form :model="formLabelAlign">
-					<el-form-item label="姓名:">
-						<!-- <lable>啊</lable> -->
-						<el-input v-model="formLabelAlign.name"></el-input>
-	
-					</el-form-item>
-					<el-form-item label="电话:">
-						<el-input v-model="formLabelAlign.phone"></el-input>
-					</el-form-item>
-					<el-form-item label="备注:">
-						<el-input v-model="formLabelAlign.message" type="textarea" rows=3></el-input>
-					</el-form-item>
-					<el-form-item>
-						<el-button class="btn">立即预约</el-button>
-					</el-form-item>
-				</el-form>
+			<!-- 推荐学校 -->
+			<div class="hot">
+				<div class="hot_title">
+					<span>图标</span>
+					<span>推荐学校</span>
+					<span>MORE+</span>
+				</div>
+				<div class="hot_centent">
+					<div><img src="./../../../static/images/aboutS.png" alt=""></div>
+					<ul>
+						<li class="text-ellipsis">
+							<span class="iconfont icon-jiantou"></span>
+							<span>2019幼儿教师资格合师资格合师资格合师资格合搜索素质</span>
+						</li>
+						<li class="text-ellipsis">
+							<span class="iconfont icon-jiantou"></span>
+							<span>2019幼儿教师资格合师资格合师资格合师资格合搜索素质</span>
+						</li>
+						<li class="text-ellipsis">
+							<span class="iconfont icon-jiantou"></span>
+							<span>2019幼儿教师资格合师资格合师资格合师资格合搜索素质</span>
+						</li>
+						<li class="text-ellipsis">
+							<span class="iconfont icon-jiantou"></span>
+							<span>2019幼儿教师资格合师资格合师资格合师资格合搜索素质</span>
+						</li>
+						<li class="text-ellipsis">
+							<span class="iconfont icon-jiantou"></span>
+							<span>2019幼儿教师资格合师资格合师资格合师资格合搜索素质</span>
+						</li>
+						<li class="text-ellipsis">
+							<span class="iconfont icon-jiantou"></span>
+							<span>2019幼儿教师资格合师资格合师资格合师资格合搜索素质</span>
+						</li>
+						<li class="text-ellipsis">
+							<span class="iconfont icon-jiantou"></span>
+							<span>2019幼儿教师资格合师资格合师资格合师资格合搜索素质</span>
+						</li>
+						<li class="text-ellipsis">
+							<span class="iconfont icon-jiantou"></span>
+							<span>2019幼儿教师资格合师资格合师资格合师资格合搜索素质</span>
+						</li>
+					</ul>
+				</div>
 			</div>
-		</div>
-		<!-- 推荐学校 -->
-		<div class="hot">
-			<div class="hot_title">
-				<span>图标</span>
-				<span>推荐学校</span>
-				<span>MORE+</span>
-			</div>
-			<div class="hot_centent">
-				<div><img src="./../../../static/images/aboutS.png" alt=""></div>
-				<ul>
-					<li class="text-ellipsis">
-						<span class="iconfont icon-jiantou"></span>
-						<span>2019幼儿教师资格合师资格合师资格合师资格合搜索素质</span>
-					</li>
-					<li class="text-ellipsis">
-						<span class="iconfont icon-jiantou"></span>
-						<span>2019幼儿教师资格合师资格合师资格合师资格合搜索素质</span>
-					</li>
-					<li class="text-ellipsis">
-						<span class="iconfont icon-jiantou"></span>
-						<span>2019幼儿教师资格合师资格合师资格合师资格合搜索素质</span>
-					</li>
-					<li class="text-ellipsis">
-						<span class="iconfont icon-jiantou"></span>
-						<span>2019幼儿教师资格合师资格合师资格合师资格合搜索素质</span>
-					</li>
-					<li class="text-ellipsis">
-						<span class="iconfont icon-jiantou"></span>
-						<span>2019幼儿教师资格合师资格合师资格合师资格合搜索素质</span>
-					</li>
-					<li class="text-ellipsis">
-						<span class="iconfont icon-jiantou"></span>
-						<span>2019幼儿教师资格合师资格合师资格合师资格合搜索素质</span>
-					</li>
-					<li class="text-ellipsis">
-						<span class="iconfont icon-jiantou"></span>
-						<span>2019幼儿教师资格合师资格合师资格合师资格合搜索素质</span>
-					</li>
-					<li class="text-ellipsis">
-						<span class="iconfont icon-jiantou"></span>
-						<span>2019幼儿教师资格合师资格合师资格合师资格合搜索素质</span>
-					</li>
-				</ul>
-			</div>
-		</div>
-		<div class="hot">
-			<div class="hot_title">
-				<span>图标</span>
-				<span>热门课程</span>
-				<span>MORE+</span>
-			</div>
-			<div class="hot_centent">
-				<div><img src="./../../../static/images/aboutS.png" alt=""></div>
-				<ul>
-					<li class="text-ellipsis">
-						<span class="iconfont icon-jiantou"></span>
-						<span>2019幼儿教师资格合师资格合师资格合师资格合搜索素质</span>
-					</li>
-					<li class="text-ellipsis">
-						<span class="iconfont icon-jiantou"></span>
-						<span>2019幼儿教师资格合师资格合师资格合师资格合搜索素质</span>
-					</li>
-					<li class="text-ellipsis">
-						<span class="iconfont icon-jiantou"></span>
-						<span>2019幼儿教师资格合师资格合师资格合师资格合搜索素质</span>
-					</li>
-					<li class="text-ellipsis">
-						<span class="iconfont icon-jiantou"></span>
-						<span>2019幼儿教师资格合师资格合师资格合师资格合搜索素质</span>
-					</li>
-					<li class="text-ellipsis">
-						<span class="iconfont icon-jiantou"></span>
-						<span>2019幼儿教师资格合师资格合师资格合师资格合搜索素质</span>
-					</li>
-					<li class="text-ellipsis">
-						<span class="iconfont icon-jiantou"></span>
-						<span>2019幼儿教师资格合师资格合师资格合师资格合搜索素质</span>
-					</li>
-					<li class="text-ellipsis">
-						<span class="iconfont icon-jiantou"></span>
-						<span>2019幼儿教师资格合师资格合师资格合师资格合搜索素质</span>
-					</li>
-					<li class="text-ellipsis">
-						<span class="iconfont icon-jiantou"></span>
-						<span>2019幼儿教师资格合师资格合师资格合师资格合搜索素质</span>
-					</li>
-				</ul>
+			<div class="hot">
+				<div class="hot_title">
+					<span>图标</span>
+					<span>热门课程</span>
+					<span>MORE+</span>
+				</div>
+				<div class="hot_centent">
+					<div><img src="./../../../static/images/aboutS.png" alt=""></div>
+					<ul>
+						<li class="text-ellipsis">
+							<span class="iconfont icon-jiantou"></span>
+							<span>2019幼儿教师资格合师资格合师资格合师资格合搜索素质</span>
+						</li>
+						<li class="text-ellipsis">
+							<span class="iconfont icon-jiantou"></span>
+							<span>2019幼儿教师资格合师资格合师资格合师资格合搜索素质</span>
+						</li>
+						<li class="text-ellipsis">
+							<span class="iconfont icon-jiantou"></span>
+							<span>2019幼儿教师资格合师资格合师资格合师资格合搜索素质</span>
+						</li>
+						<li class="text-ellipsis">
+							<span class="iconfont icon-jiantou"></span>
+							<span>2019幼儿教师资格合师资格合师资格合师资格合搜索素质</span>
+						</li>
+						<li class="text-ellipsis">
+							<span class="iconfont icon-jiantou"></span>
+							<span>2019幼儿教师资格合师资格合师资格合师资格合搜索素质</span>
+						</li>
+						<li class="text-ellipsis">
+							<span class="iconfont icon-jiantou"></span>
+							<span>2019幼儿教师资格合师资格合师资格合师资格合搜索素质</span>
+						</li>
+						<li class="text-ellipsis">
+							<span class="iconfont icon-jiantou"></span>
+							<span>2019幼儿教师资格合师资格合师资格合师资格合搜索素质</span>
+						</li>
+						<li class="text-ellipsis">
+							<span class="iconfont icon-jiantou"></span>
+							<span>2019幼儿教师资格合师资格合师资格合师资格合搜索素质</span>
+						</li>
+					</ul>
+				</div>
 			</div>
 		</div>
 	</div>

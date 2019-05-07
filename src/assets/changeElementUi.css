@@ -1,12 +1,12 @@
 /* 关于我们   element-UI样式改 */
-.about .el-form-item {
+.diyCourse .el-form-item {
 	padding-bottom: 16px;
 	margin-bottom: 0;
 	position: relative;
 
 }
 
-.about .btn {
+.diyCourse .btn {
 	width: 100%;
 	height: 40px;
 	font-size: 16px;
@@ -15,7 +15,7 @@
 	background-color: #ff5722;
 }
 
-.about .el-form-item__label {
+.diyCourse .el-form-item__label {
 	position: absolute;
 	top: 0;
 	left: 10px;
@@ -24,10 +24,10 @@
 	z-index: 10;
 }
 
-.about .el-input__inner {
+.diyCourse .el-input__inner {
 	padding-left: 50px;
 }
 
-.about .el-textarea__inner {
+.diyCourse .el-textarea__inner {
 	padding-left: 50px;
 }

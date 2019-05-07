@@ -79,8 +79,8 @@
             </div>
 
             <ul class="meus_ul">
-              <li @click="about">
-                关于我们
+              <li>
+								<router-link to="/about">关于我们</router-link>
               </li>
               <li>
                 培训课程
@@ -124,12 +124,7 @@
 			}
 		},
 		methods:{
-			// 跳转至关于我们
-			about(){
-				this.$router.push({
-					path:'./about'
-				})
-			}
+			
 		}
 	}
 </script>

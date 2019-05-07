@@ -106,11 +106,11 @@
 						</div>
 					</div>
 					<div class="banner_two">
-						<my-banner :imgList="imgLoop_two" :imgHeight="imgHeight_two" :isCarousel="isCarousel" :imgWidth="imgWidth"></my-banner>
+						<my-banner :imgList="imgLoop_two" :imgHeight="imgHeight_two" :isCarousel="isCarousel"></my-banner>
 					</div>
 				</div>
 			</div>
-						<!-- 地区划分 -->
+			<!-- 地区划分 -->
 			<div class="dqhf ">
 				<div class="title clearfix">
 					<div>
@@ -172,32 +172,32 @@
 											<img src="./../../../static/images/start.png" alt="">
 											<img src="./../../../static/images/start.png" alt="">
 										</i>
-						
+
 									</span>
 								</p>
 							</div>
 						</li>
-					<li>
-						<div>
-							<img src="./../../../static/images/adqhf.png" alt="">
-							<p class="txt">中推联合（北京）医学研究院</p>
-							<p class="txt1">
-								<span class="text-left">课程数量:197</span>
-								<span class="text-right">星级推荐
-									<i><img src="./../../../static/images/start.png" alt="">
-										<img src="./../../../static/images/start.png" alt="">
-										<img src="./../../../static/images/start.png" alt="">
-									</i>
-					
-								</span>
-							</p>
-						</div>
-					</li>
+						<li>
+							<div>
+								<img src="./../../../static/images/adqhf.png" alt="">
+								<p class="txt">中推联合（北京）医学研究院</p>
+								<p class="txt1">
+									<span class="text-left">课程数量:197</span>
+									<span class="text-right">星级推荐
+										<i><img src="./../../../static/images/start.png" alt="">
+											<img src="./../../../static/images/start.png" alt="">
+											<img src="./../../../static/images/start.png" alt="">
+										</i>
+
+									</span>
+								</p>
+							</div>
+						</li>
 					</ul>
 				</div>
 			</div>
-			
-<!-- 教育专栏 -->
+
+			<!-- 教育专栏 -->
 			<div class="education">
 				<div class="head">教育专栏</div>
 				<div class="yypx clearfix">
@@ -815,27 +815,21 @@
 		</div>
 		<!-- 底部 -->
 		<router-view></router-view>
-	
+
 	</div>
 </template>
 
 <script>
-	// import Header from './../common/Header';
 	import Banner from './../common/Banner';
-	// import Footer from './../common/Footer'
-	// import About from './../about/About'
 
 	export default {
 
 		components: {
-			// 'my-header': Header,
 			'my-banner': Banner,
-			// 'my-footer': Footer,
 		},
 		data() {
 			return {
-				isCarousel: true,
-				imgWidth: 33,
+				isCarousel: true,  //判断是否是Carousel模式下轮播图
 				imgHeight_one: 328,
 				imgLoop_one: [{
 						srcName: require('./../../../static/images/banner1.png')

@@ -105,7 +105,6 @@
 			}
 		},
 		created() {
-			console.log(this.$refs.mySwiper)
 
 
 		},

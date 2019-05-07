@@ -80,7 +80,7 @@
 
             <ul class="meus_ul">
               <li>
-								<router-link to="/nav">关于我们</router-link>
+								<router-link to="/nav/about">关于我们</router-link>
               </li>
               <li>
                 培训课程
@@ -95,10 +95,10 @@
                 教考知识
               </li>
               <li>
-                明星推荐
+                <router-link to="/home">主页</router-link>
               </li>
               <li>
-                联系我们
+               <router-link to="/nav/talkme">联系我们</router-link>
               </li>
             </ul>
           </div>

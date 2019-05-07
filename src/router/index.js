@@ -2,8 +2,9 @@ import Vue from 'vue'
 import Router from 'vue-router'
 import HelloWord from '@/components/HelloWord'
 import Home from '@/components/home/Home'
-import Nav from '@/components/about/Nav' //关于我们
-import About from '@/components/about/About' //教学环境
+import Nav from '@/components/nav/Nav' //Nav
+import About from '@/components/nav/About' //关于我们
+import TalkMe from '@/components/nav/TalkMe' //联系我们
 
 Vue.use(Router)
 
@@ -24,7 +25,9 @@ export default new Router({
 					name: 'nav',
 					component: Nav,
 					redirect: '/about',
-					children:[{path: '/about',name: 'About',component: About,}]
+					children:[
+						{path: '/nav/about',name: 'about',component: About},
+						{path: '/nav/talkme',name: 'talkMe',component: TalkMe}]
 				},
 			]
 		},

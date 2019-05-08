@@ -5,8 +5,8 @@
 			<!-- 轮播图与菜单区域 -->
 			<div class="hyfl_box clearfix">
 				<!-- 行业分类	 -->
-				<div class="navMenus">
-					<ul>
+				<div class="navMenus" ref='navMenus' @mouseout="navListBox(false)">
+					<ul class="nav" @mousemove="navListBox(true)">
 						<!-- 列表 -->
 						<li>
 							<p>
@@ -16,6 +16,93 @@
 							<p class="ts1"><span>拓展训练营</span>
 								<span> 中小学教育</span></p>
 							<span class="iconfont icon-jiantou iconPos"></span>
+							<div class="infoDetaial" v-show="infoDetaial==true">
+								<div class="paddingIner">
+									<dl class="info_dl clearfix">
+										<dt>
+											<a href="javascript:void(0)">宠物</a>
+											<b class="sm_arrow"> ></b>
+										</dt>
+										<dd class="cell clearfix">
+											<em>
+												<a  class="highlight" href="javascript:void(0)">
+													宠物美容
+												</a>
+											</em>
+											<em>
+												<a class="highlight" href="javascript:void(0)">
+													宠物美容
+												</a>
+											</em>
+										</dd>
+									</dl>
+									<dl class="info_dl clearfix">
+										<dt>
+											<a href="javascript:void(0)">宠物</a>
+											<b class="sm_arrow"> ></b>
+										</dt>
+										<dd class="cell clearfix">
+											<em>
+												<a  class="highlight" href="javascript:void(0)">
+													宠物美容
+												</a>
+											</em>
+											<em>
+												<a class="highlight" href="javascript:void(0)">
+													宠物美容
+												</a>
+											</em>
+											<em>
+												<a class="highlight" href="javascript:void(0)">
+													气修家电
+												</a>
+											</em>
+											<em>
+												<a class="highlight" href="javascript:void(0)">
+													模特走秀
+												</a>
+											</em>
+										</dd>
+									</dl>
+									<dl class="info_dl clearfix">
+										<dt>
+											<a href="javascript:void(0)">宠物</a>
+											<b class="sm_arrow"> ></b>
+										</dt>
+										<dd class="cell clearfix">
+											<em>
+												<a  class="highlight" href="javascript:void(0)">
+													宠物美容
+												</a>
+											</em>
+											<em>
+												<a class="highlight" href="javascript:void(0)">
+													宠物美容
+												</a>
+											</em>
+										</dd>
+									</dl>
+									<dl class="info_dl clearfix">
+										<dt>
+											<a href="javascript:void(0)">宠物</a>
+											<b class="sm_arrow"> ></b>
+										</dt>
+										<dd class="cell clearfix">
+											<em>
+												<a  class="highlight" href="javascript:void(0)">
+													宠物美容
+												</a>
+											</em>
+											<em>
+												<a class="highlight" href="javascript:void(0)">
+													宠物美容
+												</a>
+											</em>
+										</dd>
+									</dl>
+								</div>
+								<div class="posLogo"><img src="./../../../static/images/listpng.png" alt=""></div>
+							</div>
 						</li>
 						<li>
 							<p>
@@ -81,6 +168,7 @@
 							<span class="iconfont icon-jiantou iconPos"></span>
 						</li>
 					</ul>
+
 				</div>
 				<div class="lunbo">
 					<div class="banner_box clearfix">
@@ -807,15 +895,9 @@
 					</div>
 				</div>
 			</div>
-
-
-
-
-
 		</div>
 		<!-- 底部 -->
 		<router-view></router-view>
-
 	</div>
 </template>
 
@@ -829,8 +911,9 @@
 		},
 		data() {
 			return {
-				isCarousel: true,  //判断是否是Carousel模式下轮播图
-				imgHeight_one: 328,
+				infoDetaial: false,	//显示 菜单分类列表
+				isCarousel: true, //判断是否是Carousel模式下轮播图
+				imgHeight_one: 328, //轮播图高度
 				imgLoop_one: [{
 						srcName: require('./../../../static/images/banner1.png')
 					},
@@ -867,10 +950,20 @@
 					},
 
 				],
+
 			};
 			// imgHeight:400
 		},
-		methods: {}
+		mounted() {},
+		methods: {
+			// 触摸菜单 显示分类盒子
+			navListBox(bool){
+				this.infoDetaial=bool;
+			}
+		},
+		watch: {
+
+		}
 	}
 </script>
 
@@ -884,21 +977,22 @@
 		width: 252px;
 		border: 1px solid #ff5722;
 		float: left;
+		position: relative;
 	}
 
-	.navMenus li {
+	.navMenus .nav li {
 		position: relative;
 		padding-left: 20px;
-		height: 66px;
+		height: 67px;
 		box-sizing: border-box;
 		border-bottom: 1px dashed #e7e7e7;
 	}
 
-	.navMenus li:last-child {
+	.navMenus .nav li:last-child {
 		border-bottom: none;
 	}
 
-	.navMenus li p:first-child {
+	.navMenus .nav li p:first-child {
 		padding-top: 10px;
 	}
 
@@ -1368,5 +1462,79 @@
 		justify-content: space-between;
 		flex-wrap: wrap;
 		margin-top: 40px;
+	}
+
+	// 菜单弹出内容
+	.infoDetaial {
+		position: absolute;
+		top: 0;
+		right: -680px;
+		width: 678px;
+		height: 536px;
+		background-color: white;
+		z-index: 100;
+		border: 1px solid #ccc;
+		.posLogo{
+			position: absolute;
+			right: 20px;
+			bottom: 0;
+			img{
+				width: 197px;height: 157px;
+			}
+			
+		}
+
+		.paddingIner {
+			padding: 38px 24px 24px 40px;
+
+			.info_dl {
+				dt {
+					float: left;
+					position: relative;
+					width: 58px;
+					text-align: right;
+					padding-right: 15px;
+					margin-top: 10px;
+
+					a {
+						font-size: 14px;
+						color: #ff5400;
+						line-height: 14px
+					}
+
+					.sm_arrow {
+						position: absolute;
+						right: -30px;
+						width:40px;
+						color: #ff5400;
+
+					}
+				}
+
+				.cell {
+					padding-top: 10px;
+					padding-bottom: 10px;
+					margin-left: 125px;
+					border-bottom: 1px dashed #ddd;
+				}
+
+				dd em {
+					border-right: 1px solid #ff5400;
+					float: left;
+					font-style: normal;
+					height: 14px;
+					line-height: 14px;
+					margin: 5px 0;
+					padding: 0 20px;
+					font-size: 14px;
+					&:last-child{
+						border-right:none;
+					}
+					a{
+						color: #ff5400;
+					}
+				}
+			}
+		}
 	}
 </style>

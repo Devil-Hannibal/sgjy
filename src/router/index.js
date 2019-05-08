@@ -59,7 +59,19 @@ export default new Router({
 				{
 				    path: '/courseDetails',	//课程详情
 				    name: 'CourseDetails',
-				    component: res=> import('@/components/nav/CourseDetails')
+				    component: ()=> import('@/components/nav/CourseDetails'),
+					children:[
+                        {
+                            path: '/courseDetails/1',		//首页
+                            name:'CourseDetailsFirst',
+                            component: ()=> import('@/components/nav/CourseDetailsFirst'),
+                        },
+                        {
+                            path: '/courseDetails/2',		//首页
+                            name:'CourseAnswers',
+                            component: ()=> import('@/components/nav/CourseAnswers'),
+                        },
+					]
 				 }
 			]
 		},

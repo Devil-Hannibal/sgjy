@@ -69,6 +69,8 @@
 							<div class="rt"><img src="./../../../static/images/lxwm_1.png" alt=""></div>
 						</li>
 					</ul>
+					<el-pagination background layout="prev, pager, next" :total="1000">
+					</el-pagination>
 				</div>
 
 				<my-diy></my-diy>
@@ -153,19 +155,23 @@
 							padding-top: 43px;
 							padding-bottom: 50px;
 							border-top: 1px solid #d9d9d9;
-							&:nth-child(odd){
-								.lt{
+
+							&:nth-child(odd) {
+								.lt {
 									float: left;
 								}
-								.rt{
+
+								.rt {
 									float: right;
 								}
 							}
-							&:nth-child(even){
-								.lt{
+
+							&:nth-child(even) {
+								.lt {
 									float: right;
 								}
-								.rt{
+
+								.rt {
 									float: left;
 								}
 							}
@@ -181,36 +187,40 @@
 									padding-top: 18px;
 									padding-bottom: 18px;
 
-									
+
 								}
+
 								.content {
 									border-bottom: 10px solid #ff5722;
+
 									p {
 										font-size: 16px;
 										color: #4c4b4b;
 										padding-bottom: 24px;
 										height: 36px;
 										box-sizing: border-box;
+
 										.tb_icon {
 											width: 46px;
 											height: 42px;
 											padding-left: 43px;
 											padding-right: 17px;
-								
+
 											img {
 												// width: 100%
-												 vertical-align: middle;
-												 
+												vertical-align: middle;
+
 											}
 										}
-										.phone{
+
+										.phone {
 											font-size: 28px;
 											line-height: 36px;
 											color: #fe1000;
 										}
-								
+
 									}
-								
+
 									& p:first-child {
 										margin-top: 18px;
 										margin-bottom: 24px;
@@ -230,7 +240,7 @@
 									height: 100%;
 								}
 							}
-							
+
 						}
 					}
 				}

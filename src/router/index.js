@@ -5,6 +5,9 @@ import Home from '@/components/home/Home'	//首页
 import About from '@/components/nav/About' //关于我们
 import TalkMe from '@/components/nav/TalkMe' //联系我们
 import Msgcourse from '@/components/nav/Msgcourse' //讯息资讯
+import NewsLists from '@/components/nav/NewsLists' //文章列表
+import NewsDetails from '@/components/nav/NewsDetails' //文章详情
+
 
 Vue.use(Router)
 
@@ -36,6 +39,12 @@ export default new Router({
 					path:'/msg',		//讯息资讯
 					name:'msg',
 					component: Msgcourse,
+					redirect: '/news',
+					
+					children:[
+						{path:'/news',name:'news',component:NewsLists}, //文章列表
+						{path:'/news/details',name:'news',component:NewsDetails}	//文章详情
+					]
 					
 				},
 				{

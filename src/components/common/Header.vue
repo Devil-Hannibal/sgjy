@@ -89,7 +89,8 @@
                 培训学校
               </li>
               <li>
-                讯息资讯
+								<router-link to="/msg">讯息资讯</router-link>
+                
               </li>
               <li>
                 教考知识

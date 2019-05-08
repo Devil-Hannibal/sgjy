@@ -4,6 +4,7 @@ import HelloWord from '@/components/HelloWord'
 import Home from '@/components/home/Home'	//首页
 import About from '@/components/nav/About' //关于我们
 import TalkMe from '@/components/nav/TalkMe' //联系我们
+import Msgcourse from '@/components/nav/Msgcourse' //讯息资讯
 
 Vue.use(Router)
 
@@ -29,6 +30,12 @@ export default new Router({
 					path:'/talkMe',		//联系我们
 					name:'talkMe',
 					component: TalkMe,
+					
+				},
+				{							
+					path:'/msg',		//讯息资讯
+					name:'msg',
+					component: Msgcourse,
 					
 				},
 				{

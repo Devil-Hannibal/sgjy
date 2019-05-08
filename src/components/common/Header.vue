@@ -1,6 +1,6 @@
 <template>
   <div class="home">
-    <el-container>
+
       <el-header>
         <div class="card">
           <!-- 登录注册区域 -->

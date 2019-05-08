@@ -83,7 +83,7 @@
 								<router-link to="/about">关于我们</router-link>
               </li>
               <li>
-                培训课程
+                	<router-link to="/trainCourse">培训课程</router-link>
               </li>
               <li>
                 培训学校

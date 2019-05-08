@@ -7,6 +7,8 @@ import TalkMe from '@/components/nav/TalkMe' //联系我们
 import Msgcourse from '@/components/nav/Msgcourse' //讯息资讯
 import NewsLists from '@/components/nav/NewsLists' //文章列表
 import NewsDetails from '@/components/nav/NewsDetails' //文章详情
+import TrainCourse from '@/components/nav/TrainCourse' //培训课程
+
 
 
 Vue.use(Router)
@@ -47,6 +49,13 @@ export default new Router({
 					]
 					
 				},
+				{							
+					path:'/trainCourse',		//培训课程
+					name:'trainCourse',
+					component: TrainCourse,
+					
+				},
+				
 				{
 				    path: '/courseDetails',	//课程详情
 				    name: 'CourseDetails',

@@ -9,8 +9,8 @@
 		<!-- 行业分类Start -->
 		<div class="msg_container">
 			<div style="height: 40px;line-height: 40px;">行业分类 : &nbsp;&nbsp;&nbsp;</div>
-			<el-tabs type="border-card">
-				<el-tab-pane label="电脑与IT">
+			<el-tabs type="border-card" >
+				<el-tab-pane label="电脑与IT" ref="tabs">
 					<ul>
 						<li>的撒旦</li>
 						<li>的撒旦</li>
@@ -75,6 +75,15 @@
 		data() {
 			return {
 
+			}
+		},
+		
+		mounted() {
+			this.bb()
+		},
+		methods:{
+			bb(){
+				console.log(this.$refs.tabs)
 			}
 		}
 	}

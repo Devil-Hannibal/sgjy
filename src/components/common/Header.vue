@@ -3,20 +3,6 @@
 
       <el-header>
         <div class="card">
-          <!-- 登录注册区域 -->
-          <!-- <div class="nav">
-            <el-row>
-              <el-col :span="12">
-                <div class="fl_title">欢迎来到*-*******网！</div>
-              </el-col>
-              <el-col :span="12">
-                <div class="fr_title font16">
-                  <span class="font15">登录</span>
-                  <span>注册</span>
-                </div>
-              </el-col>
-            </el-row>
-          </div> -->
 					<login></login>
           <!-- 搜索区域 -->
           <div>
@@ -74,8 +60,8 @@
 
           <div>
             <div class="meus">
-              <span class="el-icon-s-fold"></span>
-              <span>行业分类</span>
+              <span class="iconfont icon-caidan1"></span>
+              <span class="paddingLt15">行业分类</span>
             </div>
 
             <ul class="meus_ul">
@@ -93,10 +79,10 @@
                 
               </li>
               <li>
-                教考知识
+                <router-link to="home">教考知识</router-link>
               </li>
               <li>
-                <router-link to="/home">主页</router-link>
+                <router-link to="">明星推荐</router-link>
               </li>
               <li>
                <router-link to="/talkme">联系我们</router-link>
@@ -145,18 +131,7 @@
   width: 1200px;
   margin: 0 auto;
 }
-/* .nav {
-  height: 40px;
-  background-color: #f5f5f5;
-  line-height: 40px;
-}
-.fl_title {
-  color: #949494;
-  font-size: 12px;
-}
-.fr_title {
-  text-align: right;
-} */
+
 /* 搜索logo区样式 */
 .search {
   margin-top: 25px;
@@ -224,6 +199,8 @@
   background-color: #ff5722;
   color: white;
   float: left;
+	padding-left: 15px;
+	box-sizing: border-box;
 }
 .meus_ul {
   /* padding-left: 52px;
@@ -244,5 +221,8 @@
   width: 100%;
   font-size: 16px;
   color: #333333;
+}
+.paddingLt15{
+	padding-left: 15px;
 }
 </style>

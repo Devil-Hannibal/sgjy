@@ -25,7 +25,7 @@
 										</dt>
 										<dd class="cell clearfix">
 											<em>
-												<a  class="highlight" href="javascript:void(0)">
+												<a class="highlight" href="javascript:void(0)">
 													宠物美容
 												</a>
 											</em>
@@ -43,7 +43,7 @@
 										</dt>
 										<dd class="cell clearfix">
 											<em>
-												<a  class="highlight" href="javascript:void(0)">
+												<a class="highlight" href="javascript:void(0)">
 													宠物美容
 												</a>
 											</em>
@@ -71,7 +71,7 @@
 										</dt>
 										<dd class="cell clearfix">
 											<em>
-												<a  class="highlight" href="javascript:void(0)">
+												<a class="highlight" href="javascript:void(0)">
 													宠物美容
 												</a>
 											</em>
@@ -89,7 +89,7 @@
 										</dt>
 										<dd class="cell clearfix">
 											<em>
-												<a  class="highlight" href="javascript:void(0)">
+												<a class="highlight" href="javascript:void(0)">
 													宠物美容
 												</a>
 											</em>
@@ -106,11 +106,48 @@
 						</li>
 						<li>
 							<p>
-								<span class="iconfont icon-shu"></span>
-								<span class="ts">学习辅导</span>
+								<span class="iconfont icon-yishu"></span>
+								<span class="ts">文体艺术</span>
+							</p>
+							<p class="ts1"><span>书画</span>
+								<span> 音乐</span></p>
+							<span class="iconfont icon-jiantou iconPos"></span>
+						</li>
+						<li>
+							<p>
+								<span class="iconfont icon-peixun"></span>
+								<span class="ts">英语培训</span>
 							</p>
 							<p class="ts1"><span>拓展训练营</span>
 								<span> 中小学教育</span></p>
+							<span class="iconfont icon-jiantou iconPos"></span>
+						</li>
+						<li>
+							<p>
+								<span class="iconfont icon-computer_icon"></span>
+								<span class="ts">电脑与IT</span>
+							</p>
+							<p class="ts1"><span>办公应用</span>
+								<span> 软件系统</span></p>
+							<span class="iconfont icon-jiantou iconPos"></span>
+						</li>
+						<li>
+							<p>
+								<span class="iconfont icon-lingjin"></span>
+								<span class="ts">职业技能</span>
+							</p>
+							<p class="ts1"><span>拓展训练营</span>
+								<span> 中小学教育</span></p>
+							<span class="iconfont icon-jiantou iconPos"></span>
+						</li>
+						<li>
+							<p>
+								<span class="iconfont icon-37"></span>
+								<span class="ts">资格考试</span>
+							</p>
+							<p class="ts1"><span>会计</span>
+								<span> 金融</span>
+								<span> 职称考试</span></p>
 							<span class="iconfont icon-jiantou iconPos"></span>
 						</li>
 						<li>
@@ -124,47 +161,11 @@
 						</li>
 						<li>
 							<p>
-								<span class="iconfont icon-shu"></span>
-								<span class="ts">学习辅导</span>
+								<span class="iconfont icon-boshimao"></span>
+								<span class="ts">学历文凭</span>
 							</p>
-							<p class="ts1"><span>拓展训练营</span>
-								<span> 中小学教育</span></p>
-							<span class="iconfont icon-jiantou iconPos"></span>
-						</li>
-						<li>
-							<p>
-								<span class="iconfont icon-shu"></span>
-								<span class="ts">学习辅导</span>
-							</p>
-							<p class="ts1"><span>拓展训练营</span>
-								<span> 中小学教育</span></p>
-							<span class="iconfont icon-jiantou iconPos"></span>
-						</li>
-						<li>
-							<p>
-								<span class="iconfont icon-shu"></span>
-								<span class="ts">学习辅导</span>
-							</p>
-							<p class="ts1"><span>拓展训练营</span>
-								<span> 中小学教育</span></p>
-							<span class="iconfont icon-jiantou iconPos"></span>
-						</li>
-						<li>
-							<p>
-								<span class="iconfont icon-shu"></span>
-								<span class="ts">学习辅导</span>
-							</p>
-							<p class="ts1"><span>拓展训练营</span>
-								<span> 中小学教育</span></p>
-							<span class="iconfont icon-jiantou iconPos"></span>
-						</li>
-						<li>
-							<p>
-								<span class="iconfont icon-shu"></span>
-								<span class="ts">学习辅导</span>
-							</p>
-							<p class="ts1"><span>拓展训练营</span>
-								<span> 中小学教育</span></p>
+							<p class="ts1"><span>成人教育</span>
+								<span> 靠博考研</span></p>
 							<span class="iconfont icon-jiantou iconPos"></span>
 						</li>
 					</ul>
@@ -177,18 +178,25 @@
 						</div>
 						<div class="newsList">
 							<div class="title">
-								<span></span>
+								<span class="iconfont icon-baobiao"></span>
 								<span>热门头条</span>
 							</div>
 							<div class="content">
 								<ul>
-									<li>2019幼儿教师资格综合素质啊啊啊 啊啊啊</li>
-									<li>2019幼儿教师资格综合素质啊啊啊</li>
-									<li>2019幼儿教师资格综合素质啊啊啊</li>
-									<li>2019幼儿教师资格综合素质啊啊啊</li>
-									<li>2019幼儿教师资格综合素质啊啊啊</li>
-									<li>2019幼儿教师资格综合素质啊啊啊</li>
-									<li>2019幼儿教师资格综合素质啊啊啊</li>
+									<li>
+										<span :style="hot_bg" class="hot_bg">1</span><span>2019幼儿教师资格综合素质啊啊啊 啊啊啊</span></li>
+									<li>
+										<span :style="hot_bg" class="hot_bg">2</span><span>2019幼儿教师资格综合素质啊啊啊 啊啊啊</span></li>
+									<li>
+										<span :style="hot_bg" class="hot_bg">3</span><span>2019幼儿教师资格综合素质啊啊啊 啊啊啊</span></li>
+									<li>
+										<span :style="hot_bg" class="hot_bg">4</span><span>2019幼儿教师资格综合素质啊啊啊 啊啊啊</span></li>
+									<li>
+										<span :style="hot_bg" class="hot_bg">5</span><span>2019幼儿教师资格综合素质啊啊啊 啊啊啊</span></li>
+									<li>
+										<span :style="hot_bg" class="hot_bg">6</span><span>2019幼儿教师资格综合素质啊啊啊 啊啊啊</span></li>
+
+
 								</ul>
 							</div>
 						</div>
@@ -202,7 +210,7 @@
 			<div class="dqhf ">
 				<div class="title clearfix">
 					<div>
-						<span class="iconfont icon-jiantou"></span>
+						<span class="iconfont icon-dingwei"></span>
 						<span>按地区划分</span>
 					</div>
 					<ul class="tabs">
@@ -224,10 +232,7 @@
 								<p class="txt1">
 									<span class="text-left">课程数量:197</span>
 									<span class="text-right">星级推荐
-										<i><img src="./../../../static/images/start.png" alt="">
-											<img src="./../../../static/images/start.png" alt="">
-											<img src="./../../../static/images/start.png" alt="">
-										</i>
+										<el-rate v-model="start_value" disabled text-color="#ffbe2e" score-template="{value}"></el-rate>
 
 									</span>
 								</p>
@@ -240,10 +245,7 @@
 								<p class="txt1">
 									<span class="text-left">课程数量:197</span>
 									<span class="text-right">星级推荐
-										<i><img src="./../../../static/images/start.png" alt="">
-											<img src="./../../../static/images/start.png" alt="">
-											<img src="./../../../static/images/start.png" alt="">
-										</i>
+										<el-rate v-model="start_value" disabled text-color="#ffbe2e" score-template="{value}"></el-rate>
 
 									</span>
 								</p>
@@ -256,10 +258,7 @@
 								<p class="txt1">
 									<span class="text-left">课程数量:197</span>
 									<span class="text-right">星级推荐
-										<i><img src="./../../../static/images/start.png" alt="">
-											<img src="./../../../static/images/start.png" alt="">
-											<img src="./../../../static/images/start.png" alt="">
-										</i>
+										<el-rate v-model="start_value" disabled text-color="#ffbe2e" score-template="{value}"></el-rate>
 
 									</span>
 								</p>
@@ -272,10 +271,7 @@
 								<p class="txt1">
 									<span class="text-left">课程数量:197</span>
 									<span class="text-right">星级推荐
-										<i><img src="./../../../static/images/start.png" alt="">
-											<img src="./../../../static/images/start.png" alt="">
-											<img src="./../../../static/images/start.png" alt="">
-										</i>
+										<el-rate v-model="start_value" disabled text-color="#ffbe2e" score-template="{value}"></el-rate>
 
 									</span>
 								</p>
@@ -396,32 +392,32 @@
 							</ul>
 							<ul class="txtList">
 								<li>
-									<i class="iconfont icon-jiantou"></i>
+									<i class="iconfont icon-laba_"></i>
 									<span>2019幼儿教师综合资格证书</span>
 								</li>
 								<li>
-									<i class="iconfont icon-jiantou"></i>
+									<i class="iconfont icon-laba_"></i>
 									<span>2019幼儿教师综合资格证书</span>
 								</li>
 								<li>
-									<i class="iconfont icon-jiantou"></i>
+									<i class="iconfont icon-laba_"></i>
 									<span>2019幼儿教师综合资格证书</span>
 								</li>
 								<li>
-									<i class="iconfont icon-jiantou"></i>
+									<i class="iconfont icon-laba_"></i>
 									<span>2019幼儿教师综合资格证书</span>
 								</li>
 								<li>
-									<i class="iconfont icon-jiantou"></i>
+									<i class="iconfont icon-laba_"></i>
 									<span>2019幼儿教师综合资格证书</span>
 								</li>
 
 								<li>
-									<i class="iconfont icon-jiantou"></i>
+									<i class="iconfont icon-laba_"></i>
 									<span>2019幼儿教师综合资格证书</span>
 								</li>
 								<li>
-									<i class="iconfont icon-jiantou"></i>
+									<i class="iconfont icon-laba_"></i>
 									<span>2019幼儿教师综合资格证书</span>
 								</li>
 							</ul>
@@ -537,32 +533,32 @@
 							</ul>
 							<ul class="txtList">
 								<li>
-									<i class="iconfont icon-jiantou"></i>
+									<i class="iconfont icon-laba_"></i>
 									<span>2019幼儿教师综合资格证书</span>
 								</li>
 								<li>
-									<i class="iconfont icon-jiantou"></i>
+									<i class="iconfont icon-laba_"></i>
 									<span>2019幼儿教师综合资格证书</span>
 								</li>
 								<li>
-									<i class="iconfont icon-jiantou"></i>
+									<i class="iconfont icon-laba_"></i>
 									<span>2019幼儿教师综合资格证书</span>
 								</li>
 								<li>
-									<i class="iconfont icon-jiantou"></i>
+									<i class="iconfont icon-laba_"></i>
 									<span>2019幼儿教师综合资格证书</span>
 								</li>
 								<li>
-									<i class="iconfont icon-jiantou"></i>
+									<i class="iconfont icon-laba_"></i>
 									<span>2019幼儿教师综合资格证书</span>
 								</li>
 
 								<li>
-									<i class="iconfont icon-jiantou"></i>
+									<i class="iconfont icon-laba_"></i>
 									<span>2019幼儿教师综合资格证书</span>
 								</li>
 								<li>
-									<i class="iconfont icon-jiantou"></i>
+									<i class="iconfont icon-laba_"></i>
 									<span>2019幼儿教师综合资格证书</span>
 								</li>
 							</ul>
@@ -678,32 +674,32 @@
 							</ul>
 							<ul class="txtList">
 								<li>
-									<i class="iconfont icon-jiantou"></i>
+									<i class="iconfont icon-laba_"></i>
 									<span>2019幼儿教师综合资格证书</span>
 								</li>
 								<li>
-									<i class="iconfont icon-jiantou"></i>
+									<i class="iconfont icon-laba_"></i>
 									<span>2019幼儿教师综合资格证书</span>
 								</li>
 								<li>
-									<i class="iconfont icon-jiantou"></i>
+									<i class="iconfont icon-laba_"></i>
 									<span>2019幼儿教师综合资格证书</span>
 								</li>
 								<li>
-									<i class="iconfont icon-jiantou"></i>
+									<i class="iconfont icon-laba_"></i>
 									<span>2019幼儿教师综合资格证书</span>
 								</li>
 								<li>
-									<i class="iconfont icon-jiantou"></i>
+									<i class="iconfont icon-laba_"></i>
 									<span>2019幼儿教师综合资格证书</span>
 								</li>
 
 								<li>
-									<i class="iconfont icon-jiantou"></i>
+									<i class="iconfont icon-laba_"></i>
 									<span>2019幼儿教师综合资格证书</span>
 								</li>
 								<li>
-									<i class="iconfont icon-jiantou"></i>
+									<i class="iconfont icon-laba_"></i>
 									<span>2019幼儿教师综合资格证书</span>
 								</li>
 							</ul>
@@ -722,7 +718,7 @@
 				<div class="jyxw">
 					<div class="title clearfix">
 						<div class="new_icon fl">
-							<span>图标</span>
+							<span class="iconfont icon-diqiu"></span>
 							<span>教育新闻</span>
 							<span class="sg_skew"></span>
 							<span class="bg_line"></span>
@@ -740,23 +736,23 @@
 						</div>
 						<ul class="textList">
 							<li>
-								<span class="iconfont icon-jiantou"></span>
+								<span class="iconfont icon-laba_"></span>
 								<span>哈尔滨哈尔滨哈尔滨哈尔滨哈尔滨哈尔滨哈尔滨哈尔滨哈</span>
 							</li>
 							<li>
-								<span class="iconfont icon-jiantou"></span>
+								<span class="iconfont icon-laba_"></span>
 								<span>哈尔滨哈尔滨哈尔滨哈尔滨哈尔滨哈尔滨哈尔滨哈尔滨哈</span>
 							</li>
 							<li>
-								<span class="iconfont icon-jiantou"></span>
+								<span class="iconfont icon-laba_"></span>
 								<span>哈尔滨哈尔滨哈尔滨哈尔滨哈尔滨哈尔滨哈尔滨哈尔滨哈</span>
 							</li>
 							<li>
-								<span class="iconfont icon-jiantou"></span>
+								<span class="iconfont icon-laba_"></span>
 								<span>哈尔滨哈尔滨哈尔滨哈尔滨哈尔滨哈尔滨哈尔滨哈尔滨哈</span>
 							</li>
 							<li>
-								<span class="iconfont icon-jiantou"></span>
+								<span class="iconfont icon-laba_"></span>
 								<span>哈尔滨哈尔滨哈尔滨哈尔滨哈尔滨哈尔滨哈尔滨哈尔滨哈</span>
 							</li>
 						</ul>
@@ -766,8 +762,8 @@
 				<div class="jyxw">
 					<div class="title clearfix">
 						<div class="new_icon fl">
-							<span>图标</span>
-							<span>教育新闻</span>
+							<span class="iconfont icon-shu"></span>
+							<span>热门课程</span>
 							<span class="sg_skew"></span>
 							<span class="bg_line"></span>
 						</div>
@@ -784,23 +780,23 @@
 						</div>
 						<ul class="textList">
 							<li>
-								<span class="iconfont icon-jiantou"></span>
+								<span class="iconfont icon-laba_"></span>
 								<span>哈尔滨哈尔滨哈尔滨哈尔滨哈尔滨哈尔滨哈尔滨哈尔滨哈</span>
 							</li>
 							<li>
-								<span class="iconfont icon-jiantou"></span>
+								<span class="iconfont icon-laba_"></span>
 								<span>哈尔滨哈尔滨哈尔滨哈尔滨哈尔滨哈尔滨哈尔滨哈尔滨哈</span>
 							</li>
 							<li>
-								<span class="iconfont icon-jiantou"></span>
+								<span class="iconfont icon-laba_"></span>
 								<span>哈尔滨哈尔滨哈尔滨哈尔滨哈尔滨哈尔滨哈尔滨哈尔滨哈</span>
 							</li>
 							<li>
-								<span class="iconfont icon-jiantou"></span>
+								<span class="iconfont icon-laba_"></span>
 								<span>哈尔滨哈尔滨哈尔滨哈尔滨哈尔滨哈尔滨哈尔滨哈尔滨哈</span>
 							</li>
 							<li>
-								<span class="iconfont icon-jiantou"></span>
+								<span class="iconfont icon-laba_"></span>
 								<span>哈尔滨哈尔滨哈尔滨哈尔滨哈尔滨哈尔滨哈尔滨哈尔滨哈</span>
 							</li>
 						</ul>
@@ -810,8 +806,8 @@
 				<div class="jyxw">
 					<div class="title clearfix">
 						<div class="new_icon fl">
-							<span>图标</span>
-							<span>教育新闻</span>
+							<span class="iconfont icon-xuexiao"></span>
+							<span>人气学校</span>
 							<span class="sg_skew"></span>
 							<span class="bg_line"></span>
 						</div>
@@ -828,23 +824,23 @@
 						</div>
 						<ul class="textList">
 							<li>
-								<span class="iconfont icon-jiantou"></span>
+								<span class="iconfont icon-laba_"></span>
 								<span>哈尔滨哈尔滨哈尔滨哈尔滨哈尔滨哈尔滨哈尔滨哈尔滨哈</span>
 							</li>
 							<li>
-								<span class="iconfont icon-jiantou"></span>
+								<span class="iconfont icon-laba_"></span>
 								<span>哈尔滨哈尔滨哈尔滨哈尔滨哈尔滨哈尔滨哈尔滨哈尔滨哈</span>
 							</li>
 							<li>
-								<span class="iconfont icon-jiantou"></span>
+								<span class="iconfont icon-laba_"></span>
 								<span>哈尔滨哈尔滨哈尔滨哈尔滨哈尔滨哈尔滨哈尔滨哈尔滨哈</span>
 							</li>
 							<li>
-								<span class="iconfont icon-jiantou"></span>
+								<span class="iconfont icon-laba_"></span>
 								<span>哈尔滨哈尔滨哈尔滨哈尔滨哈尔滨哈尔滨哈尔滨哈尔滨哈</span>
 							</li>
 							<li>
-								<span class="iconfont icon-jiantou"></span>
+								<span class="iconfont icon-laba_"></span>
 								<span>哈尔滨哈尔滨哈尔滨哈尔滨哈尔滨哈尔滨哈尔滨哈尔滨哈</span>
 							</li>
 						</ul>
@@ -854,8 +850,8 @@
 				<div class="jyxw">
 					<div class="title clearfix">
 						<div class="new_icon fl">
-							<span>图标</span>
-							<span>教育新闻</span>
+							<span class="iconfont icon-jilu"></span>
+							<span>特惠信息</span>
 							<span class="sg_skew"></span>
 							<span class="bg_line"></span>
 						</div>
@@ -872,23 +868,23 @@
 						</div>
 						<ul class="textList">
 							<li>
-								<span class="iconfont icon-jiantou"></span>
+								<span class="iconfont icon-laba_"></span>
 								<span>哈尔滨哈尔滨哈尔滨哈尔滨哈尔滨哈尔滨哈尔滨哈尔滨哈</span>
 							</li>
 							<li>
-								<span class="iconfont icon-jiantou"></span>
+								<span class="iconfont icon-laba_"></span>
 								<span>哈尔滨哈尔滨哈尔滨哈尔滨哈尔滨哈尔滨哈尔滨哈尔滨哈</span>
 							</li>
 							<li>
-								<span class="iconfont icon-jiantou"></span>
+								<span class="iconfont icon-laba_"></span>
 								<span>哈尔滨哈尔滨哈尔滨哈尔滨哈尔滨哈尔滨哈尔滨哈尔滨哈</span>
 							</li>
 							<li>
-								<span class="iconfont icon-jiantou"></span>
+								<span class="iconfont icon-laba_"></span>
 								<span>哈尔滨哈尔滨哈尔滨哈尔滨哈尔滨哈尔滨哈尔滨哈尔滨哈</span>
 							</li>
 							<li>
-								<span class="iconfont icon-jiantou"></span>
+								<span class="iconfont icon-laba_"></span>
 								<span>哈尔滨哈尔滨哈尔滨哈尔滨哈尔滨哈尔滨哈尔滨哈尔滨哈</span>
 							</li>
 						</ul>
@@ -911,7 +907,14 @@
 		},
 		data() {
 			return {
-				infoDetaial: false,	//显示 菜单分类列表
+				start_value:3, //星星的数量
+				hot_bg: {
+					 backgroundImage: "url(" + require("./../../../static/images/01.png") + ")",
+					 backgroundRepeat: "no-repeat",
+					  backgroundPosition: "center",
+					 
+				}, //热门列表的背景图
+				infoDetaial: false, //显示 菜单分类列表
 				isCarousel: true, //判断是否是Carousel模式下轮播图
 				imgHeight_one: 328, //轮播图高度
 				imgLoop_one: [{
@@ -957,8 +960,8 @@
 		mounted() {},
 		methods: {
 			// 触摸菜单 显示分类盒子
-			navListBox(bool){
-				this.infoDetaial=bool;
+			navListBox(bool) {
+				this.infoDetaial = bool;
 			}
 		},
 		watch: {
@@ -971,6 +974,11 @@
 	.container {
 		width: 1200px;
 		margin: 0 auto;
+	}
+
+	.navMenus .iconfont {
+		color: #ff5722;
+		font-size: 22px;
 	}
 
 	.navMenus {
@@ -1044,11 +1052,13 @@
 		width: 255px;
 		height: 329px;
 		float: right;
+		
 
 		.title {
 			line-height: 40px;
 			color: #fff;
 			background-color: #ff5722;
+			padding-left: 20px;
 		}
 
 		.content {
@@ -1084,6 +1094,10 @@
 			font-size: 24px;
 			line-height: 30px;
 			border-bottom: 2px solid #ff633c;
+			.iconfont{
+				font-size: 20px;
+				padding-right: 10px;
+			}
 
 			&>div {
 				float: left;
@@ -1145,6 +1159,13 @@
 						.txt1 {
 							font-size: 14px;
 							color: #ff0808;
+							display: flex;
+							justify-content: space-between;
+							
+							& span:nth-child(2){
+								display: flex;
+								justify-content: start;
+							}
 
 						}
 					}
@@ -1386,11 +1407,14 @@
 				font-size: 22px;
 				padding: 0px 17px;
 				position: relative;
-
+					.iconfont{
+						font-size: 20px;
+						margin-right: 10px;
+					}
 				.sg_skew {
 					display: inline-block;
 					width: 20px;
-					height: 50px;
+					height: 51px;
 					transform: skew(14deg);
 					position: absolute;
 					top: 0;
@@ -1474,14 +1498,17 @@
 		background-color: white;
 		z-index: 100;
 		border: 1px solid #ccc;
-		.posLogo{
+
+		.posLogo {
 			position: absolute;
 			right: 20px;
 			bottom: 0;
-			img{
-				width: 197px;height: 157px;
+
+			img {
+				width: 197px;
+				height: 157px;
 			}
-			
+
 		}
 
 		.paddingIner {
@@ -1505,7 +1532,7 @@
 					.sm_arrow {
 						position: absolute;
 						right: -30px;
-						width:40px;
+						width: 40px;
 						color: #ff5400;
 
 					}
@@ -1527,14 +1554,21 @@
 					margin: 5px 0;
 					padding: 0 20px;
 					font-size: 14px;
-					&:last-child{
-						border-right:none;
+
+					&:last-child {
+						border-right: none;
 					}
-					a{
+
+					a {
 						color: #ff5400;
 					}
 				}
 			}
 		}
+	}
+	.hot_bg{
+		padding: 0 10px;
+		text-align: center;
+		margin-right: 15px;
 	}
 </style>

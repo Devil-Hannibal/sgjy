@@ -7,6 +7,7 @@
 				</el-col>
 				<el-col :span="12">
 					<div class="fr_title font16">
+						<span class="iconfont icon-denglu-copy"></span>
 						<span class="font15" @click="getLogin(true)">登录</span>
 						<span @click="getSurrce(true)">注册</span>
 					</div>

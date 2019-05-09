@@ -45,7 +45,7 @@ export default new Router({
 					
 					children:[
 						{path:'/news',name:'news',component:NewsLists}, //文章列表
-						{path:'/news/details',name:'news',component:NewsDetails}	//文章详情
+						{path:'/news/details',name:'details',component:NewsDetails}	//文章详情
 					]
 					
 				},
@@ -72,17 +72,17 @@ export default new Router({
                         },
 					]
 				},
-                {
-                    path:'/starRecommendation',		//明星推荐
-                    name:'StarRecommendation',
-                    component: ()=> import('@/components/nav/StarRecommendation'),
-                    //redirect: '/news',
-                    /*children:[
-                        {path:'/news',name:'news',component:NewsLists}, //文章列表
-                        {path:'/news/details',name:'news',component:NewsDetails}	//文章详情
-                    ]*/
-
-                },
+//                 {
+//                     path:'/starRecommendation',		//明星推荐
+//                     name:'StarRecommendation',
+//                     component: ()=> import('@/components/nav/StarRecommendation'),
+//                     //redirect: '/news',
+//                     /*children:[
+//                         {path:'/news',name:'news',component:NewsLists}, //文章列表
+//                         {path:'/news/details',name:'news',component:NewsDetails}	//文章详情
+//                     ]*/
+// 
+//                 },
 
 
 			]

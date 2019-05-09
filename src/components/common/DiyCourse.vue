@@ -31,7 +31,7 @@
 			<!-- 推荐学校 -->
 			<div class="hot">
 				<div class="hot_title">
-					<span>图标</span>
+					<span class="iconfont icon-xuexiao"></span>
 					<span>推荐学校</span>
 					<span>MORE+</span>
 				</div>
@@ -39,35 +39,35 @@
 					<div><img src="./../../../static/images/aboutS.png" alt=""></div>
 					<ul>
 						<li class="text-ellipsis">
-							<span class="iconfont icon-jiantou"></span>
+							<span class="iconfont icon-laba_"></span>
 							<span>2019幼儿教师资格合师资格合师资格合师资格合搜索素质</span>
 						</li>
 						<li class="text-ellipsis">
-							<span class="iconfont icon-jiantou"></span>
+							<span class="iconfont icon-laba_"></span>
 							<span>2019幼儿教师资格合师资格合师资格合师资格合搜索素质</span>
 						</li>
 						<li class="text-ellipsis">
-							<span class="iconfont icon-jiantou"></span>
+							<span class="iconfont icon-laba_"></span>
 							<span>2019幼儿教师资格合师资格合师资格合师资格合搜索素质</span>
 						</li>
 						<li class="text-ellipsis">
-							<span class="iconfont icon-jiantou"></span>
+							<span class="iconfont icon-laba_"></span>
 							<span>2019幼儿教师资格合师资格合师资格合师资格合搜索素质</span>
 						</li>
 						<li class="text-ellipsis">
-							<span class="iconfont icon-jiantou"></span>
+							<span class="iconfont icon-laba_"></span>
 							<span>2019幼儿教师资格合师资格合师资格合师资格合搜索素质</span>
 						</li>
 						<li class="text-ellipsis">
-							<span class="iconfont icon-jiantou"></span>
+							<span class="iconfont icon-laba_"></span>
 							<span>2019幼儿教师资格合师资格合师资格合师资格合搜索素质</span>
 						</li>
 						<li class="text-ellipsis">
-							<span class="iconfont icon-jiantou"></span>
+							<span class="iconfont icon-laba_"></span>
 							<span>2019幼儿教师资格合师资格合师资格合师资格合搜索素质</span>
 						</li>
 						<li class="text-ellipsis">
-							<span class="iconfont icon-jiantou"></span>
+							<span class="iconfont icon-laba_"></span>
 							<span>2019幼儿教师资格合师资格合师资格合师资格合搜索素质</span>
 						</li>
 					</ul>
@@ -75,7 +75,7 @@
 			</div>
 			<div class="hot">
 				<div class="hot_title">
-					<span>图标</span>
+					<span class="iconfont icon-shu"></span>
 					<span>热门课程</span>
 					<span>MORE+</span>
 				</div>
@@ -83,35 +83,35 @@
 					<div><img src="./../../../static/images/aboutS.png" alt=""></div>
 					<ul>
 						<li class="text-ellipsis">
-							<span class="iconfont icon-jiantou"></span>
+							<span class="iconfont icon-laba_"></span>
 							<span>2019幼儿教师资格合师资格合师资格合师资格合搜索素质</span>
 						</li>
 						<li class="text-ellipsis">
-							<span class="iconfont icon-jiantou"></span>
+							<span class="iconfont icon-laba_"></span>
 							<span>2019幼儿教师资格合师资格合师资格合师资格合搜索素质</span>
 						</li>
 						<li class="text-ellipsis">
-							<span class="iconfont icon-jiantou"></span>
+							<span class="iconfont icon-laba_"></span>
 							<span>2019幼儿教师资格合师资格合师资格合师资格合搜索素质</span>
 						</li>
 						<li class="text-ellipsis">
-							<span class="iconfont icon-jiantou"></span>
+							<span class="iconfont icon-laba_"></span>
 							<span>2019幼儿教师资格合师资格合师资格合师资格合搜索素质</span>
 						</li>
 						<li class="text-ellipsis">
-							<span class="iconfont icon-jiantou"></span>
+							<span class="iconfont icon-laba_"></span>
 							<span>2019幼儿教师资格合师资格合师资格合师资格合搜索素质</span>
 						</li>
 						<li class="text-ellipsis">
-							<span class="iconfont icon-jiantou"></span>
+							<span class="iconfont icon-laba_"></span>
 							<span>2019幼儿教师资格合师资格合师资格合师资格合搜索素质</span>
 						</li>
 						<li class="text-ellipsis">
-							<span class="iconfont icon-jiantou"></span>
+							<span class="iconfont icon-laba_"></span>
 							<span>2019幼儿教师资格合师资格合师资格合师资格合搜索素质</span>
 						</li>
 						<li class="text-ellipsis">
-							<span class="iconfont icon-jiantou"></span>
+							<span class="iconfont icon-laba_"></span>
 							<span>2019幼儿教师资格合师资格合师资格合师资格合搜索素质</span>
 						</li>
 					</ul>
@@ -150,12 +150,17 @@
 			border-image: -moz-linear-gradient(#ff5722, #fed16c) 1 1;
 			border-image: -o-linear-gradient(#ff5722, #fed16c) 1 1;
 			border-image: linear-gradient(#ff5722, #fed16c) 1 1;
+			
 	
 			.title {
+				display: flex;
+				align-items: center;
 				.text {
 					background: linear-gradient(to top, #ff5722, #fed16c);
 					-webkit-background-clip: text;
 					color: transparent;
+					padding-left: 10px;
+					font-size: 24px;
 				}
 			}
 		}
@@ -171,6 +176,9 @@
 				color: #ff5722;
 				border-bottom: 2px solid #ff5722;
 				padding-bottom: 13px;
+				.iconfont{
+					font-size: 25px;
+				}
 	
 				& span:nth-child(2) {
 					font-size: 20px;

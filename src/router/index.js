@@ -47,7 +47,6 @@ export default new Router({
 						{path:'/news',name:'news',component:NewsLists}, //文章列表
 						{path:'/news/details',name:'details',component:NewsDetails}	//文章详情
 					]
-					
 				},
 				{							
 					path:'/trainCourse',		//培训课程
@@ -56,17 +55,18 @@ export default new Router({
 					
 				},
 				{
-				    path: '/courseDetails',	//课程详情
+				    path: '/courseDetails',	  //课程详情
 				    name: 'CourseDetails',
+					redirect:'/courseDetails/1',
 				    component: ()=> import('@/components/nav/CourseDetails'),
 					children:[
                         {
-                            path: '/courseDetails/1',		//首页
+                            path: '/courseDetails/1',		//课程详情
                             name:'CourseDetailsFirst',
                             component: ()=> import('@/components/nav/CourseDetailsFirst'),
                         },
                         {
-                            path: '/courseDetails/2',		//首页
+                            path: '/courseDetails/2',		//课程问答
                             name:'CourseAnswers',
                             component: ()=> import('@/components/nav/CourseAnswers'),
                         },

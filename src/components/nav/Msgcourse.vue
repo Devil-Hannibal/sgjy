@@ -7,7 +7,7 @@
 		</el-breadcrumb>
 		<!-- 面包屑导航End -->
 		<!-- 行业分类Start -->
-		<div class="msg_container">
+		<div class="msg_container" style="margin-top: 1px;">
 			<div style="height: 40px;line-height: 40px;">行业分类 : &nbsp;&nbsp;&nbsp;</div>
 			<el-tabs type="border-card" >
 				<el-tab-pane label="电脑与IT" ref="tabs">

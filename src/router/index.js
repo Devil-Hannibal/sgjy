@@ -55,7 +55,6 @@ export default new Router({
 					component: TrainCourse,
 					
 				},
-				
 				{
 				    path: '/courseDetails',	//课程详情
 				    name: 'CourseDetails',
@@ -72,7 +71,20 @@ export default new Router({
                             component: ()=> import('@/components/nav/CourseAnswers'),
                         },
 					]
-				 }
+				},
+                {
+                    path:'/starRecommendation',		//明星推荐
+                    name:'StarRecommendation',
+                    component: ()=> import('@/components/nav/StarRecommendation'),
+                    //redirect: '/news',
+                    /*children:[
+                        {path:'/news',name:'news',component:NewsLists}, //文章列表
+                        {path:'/news/details',name:'news',component:NewsDetails}	//文章详情
+                    ]*/
+
+                },
+
+
 			]
 		},
 

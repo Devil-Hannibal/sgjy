@@ -83,7 +83,7 @@
 									<img :src="img1" alt="">
 								</div>
 								<div class="imgText">
-									<p>北京私教选择性功能评估与筛查培训</p>
+									<p @click="getDeatails">北京私教选择性功能评估与筛查培训(跳转)</p>
 									<p>北京私教选择性功能评估与筛查培训</p>
 									<p>
 										<span>价格：电话咨询 </span>
@@ -240,8 +240,15 @@
             },
             industrySelect(){
                 this.is_display=false;
-            }
-		}
+            },
+			// 跳转详情
+			getDeatails(){
+				this.$router.push({
+					path:'/courseDetails'
+				})
+			}
+					
+			}
 	}
 </script>
 

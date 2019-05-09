@@ -66,6 +66,10 @@
 							<li class="active">近期</li>
 							<li>人气</li>
 							<li>价格</li>
+							<li>
+								<p class="iconfont icon-iconfontplatformentrance-copy"></p>
+								<p class="iconfont icon-iconfont-left"></p>
+							</li>
 						</ul>
 						<div>
 					
@@ -285,6 +289,20 @@
 
 						li {
 							padding: 0 33px;
+							&:nth-child(4){
+								padding-right: 5px;
+							}
+							&:last-child{
+								padding: 0;
+								display: flex;
+								justify-content: center;
+								flex-direction: column;
+								align-items: center;
+							}
+							p{
+								line-height: 10px;
+								color: #cecece;
+							}
 
 							&.active {
 								color: #ff5722;

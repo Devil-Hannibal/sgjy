@@ -79,10 +79,10 @@
                 
               </li>
               <li>
-                <router-link to="home">教考知识</router-link>
+                <router-link to="/home">教考知识</router-link>
               </li>
               <li>
-                <router-link to="">明星推荐</router-link>
+                <router-link to="/starRecommendation">明星推荐</router-link>
               </li>
               <li>
                <router-link to="/talkme">联系我们</router-link>

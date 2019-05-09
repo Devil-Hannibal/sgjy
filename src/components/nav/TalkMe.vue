@@ -69,8 +69,12 @@
 							<div class="rt"><img src="./../../../static/images/lxwm_1.png" alt=""></div>
 						</li>
 					</ul>
-					<el-pagination background layout="prev, pager, next" :total="1000">
-					</el-pagination>
+					<div class="pagination">
+						<button>首页</button>
+						<el-pagination background layout="prev, pager, next,slot" :total="1000" :page-size="50" prev-text="上一页" next-text="下一页">
+						</el-pagination>
+						<button>尾页</button>
+					</div>
 				</div>
 
 				<my-diy></my-diy>
@@ -247,5 +251,17 @@
 			}
 		}
 
+	}
+	// 分页
+	.pagination{
+		display: flex;
+		justify-content: center;
+		padding: 59px 0;
+		button{
+			font-size: 14px;
+			background-color: transparent;
+			border: 1px solid #e8e8e8;
+			padding: 2px 5px;
+		}
 	}
 </style>

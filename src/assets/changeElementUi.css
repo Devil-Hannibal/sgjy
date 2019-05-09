@@ -102,3 +102,10 @@ color:#ff5722;
 }
 
 /*  */
+ .talkMe .el-pagination.is-background .btn-next, .el-pagination.is-background .btn-prev, .el-pagination.is-background .el-pager li{
+	background-color: white;
+	border: 1px solid #ccc;
+}
+ .talkMe .el-pagination.is-background .el-pager li:not(.disabled).active{
+	background-color: #FF5722;
+}

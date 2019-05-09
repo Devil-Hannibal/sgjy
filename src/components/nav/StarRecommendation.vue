@@ -62,8 +62,12 @@
                     <div>综合</div>
                     <div>近期</div>
                     <div>星级推荐</div>
-                    <div>
+                    <div class="" style="display:flex;">
                         <p>价格</p>
+                        <div style="display: flex;justify-content: center;flex-direction: column;align-content: center;margin-left: 5px;">
+                            <p class="iconfont icon-iconfontplatformentrance-copy" style="line-height: 16px"></p>
+                            <p class="iconfont icon-iconfont-left" style="line-height: 16px"></p>
+                        </div>
                     </div>
                 </div>
                 <ul v-for="item in 15">
@@ -79,7 +83,7 @@
                             background
                             @size-change="handleSizeChange"
                             @current-change="handleCurrentChange"
-                            :current-page.sync="currentPage3"
+                            :current-page.sync="currentPage"
                             :page-size="100"
                             layout="prev, pager, next, jumper"
                             :total="1000">
@@ -123,6 +127,7 @@
                 }],
                 value: '',
 
+                currentPage:1,
                 linkage:3,            //联动数据
                 is_display:false  ,  //行业分类是否隐藏
             }
@@ -142,6 +147,13 @@
             },
             industrySelect(){
                 this.is_display=false;
+            },
+
+            handleSizeChange(val) {       //分页控件方法
+                console.log(`每页 ${val} 条`);
+            },
+            handleCurrentChange(val) {
+                console.log(`当前页: ${val}`);
             }
 
         }

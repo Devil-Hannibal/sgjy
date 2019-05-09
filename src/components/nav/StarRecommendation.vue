@@ -148,11 +148,11 @@
     }
 </script>
 <style lang="less" scoped>
-    .qf:after{ content:"";display:block;clear:both;}
+
 
     .StarRecommendation{width:1200px;margin: 0 auto;}
 
-
+    .qf:after{ content:"";display:block;clear:both;}
     .headerStar{width:1200px;position: relative;}
     .headerBreadcrumb{height:50px;}
     .headerStar .Breadcrumb_del{position: absolute;right:15px;top:15px;z-index: 888;height:18px;line-height: 18px;}

@@ -1,5 +1,5 @@
 <template>
-	<div>
+	<div class="login">
 		<div class="nav">
 			<el-row>
 				<el-col :span="12">
@@ -283,9 +283,14 @@
 </script>
 
 <style scoped lang="less">
+	.login{
+		width: 100%;
+		background-color: #f5f5f5;
+	}
 	.nav {
 		height: 40px;
-		background-color: #f5f5f5;
+		width: 1200px;
+		margin: 0 auto;
 		line-height: 40px;
 	}
 

@@ -1,11 +1,11 @@
 <template>
-  <div class="home">
+  <div class="header">
 
       <el-header>
         <div class="card">
 					<login></login>
           <!-- 搜索区域 -->
-          <div>
+          <div style="width: 1200px;margin: 0 auto;">
             <el-row>
               <!-- logo区域 -->
               <el-col :span="4">
@@ -58,7 +58,7 @@
           </div>
           <!-- 菜单栏 -->
 
-          <div>
+          <div style="width: 1200px;margin: 0 auto;">
             <div class="meus">
               <span class="iconfont icon-caidan1"></span>
               <span class="paddingLt15">行业分类</span>
@@ -124,13 +124,13 @@
 /* 头部区域样式后期可能抽离出去 */
 .el-header {
   border-bottom: 2px solid #ff5722;
-  height: 215px !important;
+  height: 217px !important;
   padding: 0;
 }
-.el-header .card {
+/* .el-header .card {
   width: 1200px;
   margin: 0 auto;
-}
+} */
 
 /* 搜索logo区样式 */
 .search {
@@ -193,6 +193,7 @@
 }
 /* 横菜单栏 */
 .meus {
+	
   width: 254px;
   height: 38px;
   line-height: 38px;

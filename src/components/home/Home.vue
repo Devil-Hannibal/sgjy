@@ -174,7 +174,7 @@
 				<div class="lunbo">
 					<div class="banner_box clearfix">
 						<div class="banner_one">
-							<my-banner :imgList="imgLoop_one" :imgHeight="imgHeight_one"></my-banner>
+							<my-banner :imgList="imgLoop_one" :imgHeight="imgHeight_one" :swiperOption="swiperOptionOne"></my-banner>
 						</div>
 						<div class="newsList">
 							<div class="title">
@@ -195,6 +195,8 @@
 										<span :style="hot_bg" class="hot_bg">5</span><span>2019幼儿教师资格综合素质啊啊啊 啊啊啊</span></li>
 									<li>
 										<span :style="hot_bg" class="hot_bg">6</span><span>2019幼儿教师资格综合素质啊啊啊 啊啊啊</span></li>
+									<li>
+										<span :style="hot_bg" class="hot_bg">7</span><span>2019幼儿教师资格综合素质啊啊啊 啊啊啊</span></li>
 
 
 								</ul>
@@ -202,7 +204,7 @@
 						</div>
 					</div>
 					<div class="banner_two">
-						<my-banner :imgList="imgLoop_two" :imgHeight="imgHeight_two" :isCarousel="isCarousel"></my-banner>
+						<my-banner :imgList="imgLoop_two" :imgHeight="imgHeight_two" :swiperOption="swiperOptionTwo"></my-banner>
 					</div>
 				</div>
 			</div>
@@ -288,17 +290,17 @@
 					<div class="px_details fl">
 						<div class="title clearfix">
 							<div class="fl">
-								<span>1F</span>
+								<span class="bg" :style="{backgroundImage: 'url(' + bg1 + ')' }">1F</span>
 								<span>语言培训</span>
 							</div>
 							<ul class="tabs">
-								<li class="active">小语种</li>
-								<li>英语</li>
+								<li @click="getLanguageTrain('xyz')" :class="{'active':this.train.language=='xyz'}">小语种</li>
+								<li @click="getLanguageTrain('yy')" :class="{'active':this.train.language=='yy'}">英语</li>
 							</ul>
 						</div>
 						<div class="content clearfix">
 							<div class="fl"> <img src="./../../../static/images/1.png" alt=""></div>
-							<div class="fl details">
+							<div class="fl details" v-show="this.train.language=='xyz'">
 								<ul class="clearfix">
 									<li>
 										<div>
@@ -353,6 +355,70 @@
 									<li>
 										<div>
 											<img src="./../../../static/images/px.png" alt="">
+											<p class="txt">中推联合（北京）医学研究院</p>
+											<p class="txt1">
+												<span class="text-left">价格:&yen;10097</span>
+												<span class="fr">人气:7582</span>
+											</p>
+										</div>
+									</li>
+								</ul>
+							</div>
+							<div class="fl details" v-show="this.train.language=='yy'">
+								<ul class="clearfix">
+									<li>
+										<div>
+											<img src="./../../../static/images/121.png" alt="">
+											<p class="txt">中推联合（北京）医学研究院</p>
+											<p class="txt1">
+												<span class="text-left">价格:&yen;10097</span>
+												<span class="fr">人气:7582</span>
+											</p>
+										</div>
+									</li>
+									<li>
+										<div>
+											<img src="./../../../static/images/121.png" alt="">
+											<p class="txt">中推联合（北京）医学研究院</p>
+											<p class="txt1">
+												<span class="text-left">价格:&yen;10097</span>
+												<span class="fr">人气:7582</span>
+											</p>
+										</div>
+									</li>
+									<li>
+										<div>
+											<img src="./../../../static/images/121.png" alt="">
+											<p class="txt">中推联合（北京）医学研究院</p>
+											<p class="txt1">
+												<span class="text-left">价格:&yen;10097</span>
+												<span class="fr">人气:7582</span>
+											</p>
+										</div>
+									</li>
+									<li>
+										<div>
+											<img src="./../../../static/images/121.png" alt="">
+											<p class="txt">中推联合（北京）医学研究院</p>
+											<p class="txt1">
+												<span class="text-left">价格:&yen;10097</span>
+												<span class="fr">人气:7582</span>
+											</p>
+										</div>
+									</li>
+									<li>
+										<div>
+											<img src="./../../../static/images/121.png" alt="">
+											<p class="txt">中推联合（北京）医学研究院</p>
+											<p class="txt1">
+												<span class="text-left">价格:&yen;10097</span>
+												<span class="fr">人气:7582</span>
+											</p>
+										</div>
+									</li>
+									<li>
+										<div>
+											<img src="./../../../static/images/121.png" alt="">
 											<p class="txt">中推联合（北京）医学研究院</p>
 											<p class="txt1">
 												<span class="text-left">价格:&yen;10097</span>
@@ -429,7 +495,7 @@
 					<div class="px_details fl">
 						<div class="title clearfix">
 							<div class="fl">
-								<span>2F</span>
+								<span class="bg" :style="{backgroundImage: 'url(' + bg3 + ')' }">2F</span>
 								<span>资格考试</span>
 							</div>
 							<ul class="tabs">
@@ -570,7 +636,7 @@
 					<div class="px_details fl">
 						<div class="title clearfix">
 							<div class="fl">
-								<span>3F</span>
+								<span class="bg" :style="{backgroundImage: 'url(' + bg3 + ')' }">3F</span>
 								<span>学习辅导</span>
 							</div>
 							<ul class="tabs">
@@ -711,7 +777,7 @@
 
 			<!-- 轮播图3 -->
 			<div class="lbt3">
-				<my-banner :imgList="imgLoop_three" :imgHeight="imgHeight_three"></my-banner>
+				<my-banner :imgList="imgLoop_three" :imgHeight="imgHeight_three" :swiperOption="swiperOptionOne"></my-banner>
 			</div>
 			<!-- 新闻动态 -->
 			<div class="newsDt">
@@ -899,6 +965,9 @@
 
 <script>
 	import Banner from './../common/Banner';
+	import Bg1 from './../../../static/images/floor_title_1.png'
+	import Bg2 from './../../../static/images/floor_title_2.png'
+	import Bg3 from './../../../static/images/floor_title_3.png'
 
 	export default {
 
@@ -907,15 +976,77 @@
 		},
 		data() {
 			return {
-				start_value:3, //星星的数量
+				bg1:Bg1,
+				bg2:Bg2,
+				bg3:Bg3,
+				
+				train: {
+					language: "xyz",
+				},
+				
+				// 第一个轮播图的配置项
+				swiperOptionOne: {
+					notNextTick: true,
+					//循环
+					loop: true,
+					//设定初始化时slide的索引
+					initialSlide: 0,
+					//自动播放
+					autoplay: true,
+					//滑动速度
+					speed: 800,
+					//滑动方向
+					direction: 'horizontal',
+					//小手掌抓取滑动
+					// grabCursor : true,
+
+
+					//分页器设置         
+					pagination: {
+						el: '.swiper-pagination',
+						type: 'bullets',
+						//type: 'fraction',
+						//type : 'progressbar',
+						//type : 'custom',
+						// progressbarOpposite: true, //使进度条分页器与Swiper的direction参数相反
+						bulletElement: 'span', //设定分页器指示器（小点）的HTML标签。
+						// dynamicBullets: true, //动态分页器，当你的slide很多时，开启后，分页器小点的数量会部分隐藏。
+						dynamicMainBullets: 4, //动态分页器的主指示点的数量
+						hideOnClick: true, //默认分页器会一直显示。这个选项设置为true时点击Swiper会隐藏/显示分页器。
+						clickable: true, //此参数设置为true时，点击分页器的指示点分页器会控制Swiper切换。
+
+					},
+				},
+				// 第二个轮播图的配置项
+				swiperOptionTwo: {
+					navigation: {
+						nextEl: '.swiper-button-next',
+						prevEl: '.swiper-button-prev'
+					},
+
+					notNextTick: true,
+					// 循环
+					loop: true,
+					//设定初始化时slide的索引
+					initialSlide: 0,
+					//自动播放
+					autoplay: true,
+					speed: 800,
+					direction: 'horizontal',
+					slidesPerView: 3,
+					paginationClickable: true,
+					spaceBetween: 5
+
+				},
+				start_value: 3, //星星的数量
 				hot_bg: {
-					 backgroundImage: "url(" + require("./../../../static/images/01.png") + ")",
-					 backgroundRepeat: "no-repeat",
-					  backgroundPosition: "center",
-					 
+					backgroundImage: "url(" + require("./../../../static/images/01.png") + ")",
+					backgroundRepeat: "no-repeat",
+					backgroundPosition: "center",
+
 				}, //热门列表的背景图
 				infoDetaial: false, //显示 菜单分类列表
-				isCarousel: true, //判断是否是Carousel模式下轮播图
+				// isCarousel: true, //判断是否是Carousel模式下轮播图
 				imgHeight_one: 328, //轮播图高度
 				imgLoop_one: [{
 						srcName: require('./../../../static/images/banner1.png')
@@ -962,6 +1093,9 @@
 			// 触摸菜单 显示分类盒子
 			navListBox(bool) {
 				this.infoDetaial = bool;
+			},
+			getLanguageTrain(val) {
+				this.train.language = val;
 			}
 		},
 		watch: {
@@ -986,6 +1120,7 @@
 		border: 1px solid #ff5722;
 		float: left;
 		position: relative;
+		border-top: none;
 	}
 
 	.navMenus .nav li {
@@ -1052,7 +1187,7 @@
 		width: 255px;
 		height: 329px;
 		float: right;
-		
+
 
 		.title {
 			line-height: 40px;
@@ -1094,7 +1229,8 @@
 			font-size: 24px;
 			line-height: 30px;
 			border-bottom: 2px solid #ff633c;
-			.iconfont{
+
+			.iconfont {
 				font-size: 20px;
 				padding-right: 10px;
 			}
@@ -1161,8 +1297,8 @@
 							color: #ff0808;
 							display: flex;
 							justify-content: space-between;
-							
-							& span:nth-child(2){
+
+							& span:nth-child(2) {
 								display: flex;
 								justify-content: start;
 							}
@@ -1207,6 +1343,16 @@
 				color: #333333;
 				font-size: 24px;
 				border-bottom: 2px solid #70d5cd;
+				.bg{
+					background: no-repeat;
+					width: 60px;
+					color: white;
+					height: 40px;
+					display: inline-block;
+					font-size: 18px;
+					line-height: 40px;
+					
+				}
 
 				.tabs {
 					float: right;
@@ -1407,10 +1553,12 @@
 				font-size: 22px;
 				padding: 0px 17px;
 				position: relative;
-					.iconfont{
-						font-size: 20px;
-						margin-right: 10px;
-					}
+
+				.iconfont {
+					font-size: 20px;
+					margin-right: 10px;
+				}
+
 				.sg_skew {
 					display: inline-block;
 					width: 20px;
@@ -1566,7 +1714,8 @@
 			}
 		}
 	}
-	.hot_bg{
+
+	.hot_bg {
 		padding: 0 10px;
 		text-align: center;
 		margin-right: 15px;

@@ -5,7 +5,7 @@
                 <el-breadcrumb separator-class="el-icon-arrow-right" style="height:36px;">
                     <el-breadcrumb-item :to="{ path: '/' }">源学网首页</el-breadcrumb-item>
                     <el-breadcrumb-item :to="{ path: '/' }">明星推荐</el-breadcrumb-item>
-                    <el-breadcrumb-item v-for="item in linkage">
+                    <el-breadcrumb-item v-for="item in linkage" :key="item">
                         <el-select v-model="value" placeholder="请选择" size="mini">
                             <el-option
                                     v-for="item in options"

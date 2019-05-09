@@ -1326,7 +1326,7 @@
 				& span:last-child {
 					font-size: 14px;
 					color: #ff5722;
-					padding-left: 25px;
+					padding-left: 22px;
 				}
 			}
 

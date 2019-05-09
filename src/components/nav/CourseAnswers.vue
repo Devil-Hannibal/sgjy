@@ -87,3 +87,9 @@
     .answers>ul li:nth-child(3){position: absolute;bottom:20px;right:30px;}
 
 </style>
+<style>
+    .el-pagination.is-background .el-pager li:not(.disabled).active {
+    background-color: #ff5722 !important;
+    color: #FFF;
+    }
+</style>

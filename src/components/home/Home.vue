@@ -290,7 +290,7 @@
 					<div class="px_details fl">
 						<div class="title clearfix">
 							<div class="fl">
-								<span class="bg" :style="{backgroundImage: 'url(' + bg1 + ')' }">1F</span>
+								<span class="bg" :style="{backgroundImage: 'url(' + bg2 + ')' }">1F</span>
 								<span>语言培训</span>
 							</div>
 							<ul class="tabs">
@@ -495,7 +495,7 @@
 					<div class="px_details fl">
 						<div class="title clearfix">
 							<div class="fl">
-								<span class="bg" :style="{backgroundImage: 'url(' + bg3 + ')' }">2F</span>
+								<span class="bg" :style="{backgroundImage: 'url(' + bg1 + ')' }">2F</span>
 								<span>资格考试</span>
 							</div>
 							<ul class="tabs">
@@ -1351,6 +1351,7 @@
 					display: inline-block;
 					font-size: 18px;
 					line-height: 40px;
+					padding-left: 5px;
 					
 				}
 
@@ -1455,24 +1456,29 @@
 			.hot_title {
 				height: 40px;
 				line-height: 30px;
-				padding-bottom: 10px;
+				margin-bottom: 10px;
 				box-sizing: border-box;
 				border-bottom: 1px solid #dcdcdc;
 
 				span {
 					font-size: 18px;
 					color: #333333;
+					display: inline-block;
+					border-bottom: 2px solid #ff5722;
+					height: 40px;
+					padding-right: 9px;
 
 				}
 
 				& span:nth-child(2) {
-					padding-left: 18px;
+					padding-left: 9px;
 				}
 
 				& span:last-child {
 					font-size: 14px;
 					color: #ff5722;
-					padding-left: 22px;
+					padding-left: 7px;
+					border:none;
 				}
 			}
 

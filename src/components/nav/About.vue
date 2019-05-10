@@ -11,7 +11,7 @@
 					<div class="title">
 						<div>学校简介</div>
 						<div class="active">教学环境</div>
-						<div>学校简介</div>
+						<div>联系我们</div>
 					</div>
 					<!-- 内容区域 -->
 					<div class="content">
